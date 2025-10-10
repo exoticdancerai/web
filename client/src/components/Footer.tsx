@@ -22,10 +22,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">⭐</span>
-              <span className="text-3xl font-serif font-bold text-patriot-gold">250</span>
-              <span className="text-2xl font-black">STAR</span>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-2xl font-black">Anthem250</span>
             </div>
             <p className="text-white/70 text-sm">
               The first National Anthem NFT commemorating America's 250th anniversary.

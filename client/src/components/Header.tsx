@@ -18,10 +18,8 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-patriot-navy via-patriot-red/20 to-patriot-navy backdrop-blur-md border-b-4 border-patriot-gold shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-3">
-            <span className="text-3xl">⭐</span>
-            <span className="text-3xl font-serif font-bold text-patriot-gold">250</span>
-            <span className="text-2xl font-black text-white">STAR</span>
+          <div className="flex items-center gap-2">
+            <span className="text-2xl font-black text-white">Anthem250</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
