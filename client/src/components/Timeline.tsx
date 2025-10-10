@@ -35,19 +35,26 @@ export default function Timeline() {
   ];
 
   return (
-    <section id="timeline" className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="timeline" className="py-20 bg-gradient-to-b from-patriot-navy to-patriot-red/10 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-0 right-0 h-12 bg-white"></div>
+        <div className="absolute top-12 left-0 right-0 h-12 bg-patriot-red"></div>
+        <div className="absolute top-24 left-0 right-0 h-12 bg-white"></div>
+        <div className="absolute top-36 left-0 right-0 h-12 bg-patriot-red"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-black mb-6 text-white">
             AMERICA'S <span className="text-patriot-gold font-serif">250 YEAR JOURNEY</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             From independence to innovation, trace the historical path of our national anthem
           </p>
         </div>
 
         <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-patriot-blue via-patriot-red to-patriot-gold hidden md:block"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-2 bg-gradient-to-b from-white via-patriot-red to-patriot-blue hidden md:block shadow-2xl"></div>
 
           <div className="space-y-12">
             {events.map((event, index) => (
@@ -61,17 +68,17 @@ export default function Timeline() {
                 <div className="w-full md:w-5/12"></div>
                 
                 <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-patriot-navy border-4 border-patriot-gold flex items-center justify-center z-10">
-                    <Calendar className="h-8 w-8 text-patriot-gold" />
+                  <div className="w-20 h-20 rounded-full bg-white border-4 border-patriot-gold flex items-center justify-center z-10 shadow-2xl">
+                    <span className="text-4xl">⭐</span>
                   </div>
                 </div>
 
                 <div className="w-full md:w-5/12">
-                  <div className="bg-card rounded-xl border border-card-border p-6 hover-elevate transition-all">
-                    <div className="text-4xl font-serif font-bold text-patriot-gold mb-2">
+                  <div className="bg-white rounded-xl border-4 border-patriot-blue p-6 hover-elevate transition-all shadow-xl">
+                    <div className="text-5xl font-serif font-bold text-patriot-red mb-2">
                       {event.year}
                     </div>
-                    <h3 className="text-xl font-bold mb-2">{event.title}</h3>
+                    <h3 className="text-xl font-bold mb-2 text-patriot-navy">{event.title}</h3>
                     <p className="text-muted-foreground">{event.description}</p>
                   </div>
                 </div>

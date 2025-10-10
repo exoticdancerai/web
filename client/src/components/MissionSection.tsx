@@ -2,10 +2,15 @@ import { Flag, Music, History } from "lucide-react";
 
 export default function MissionSection() {
   return (
-    <section id="mission" className="py-20 bg-background">
+    <section id="mission" className="py-20 bg-background relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-patriot-red via-white to-patriot-blue"></div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <span className="text-5xl">🇺🇸</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black mb-6">
             WHAT IS <span className="text-patriot-red">ANTHEM250</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

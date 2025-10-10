@@ -30,11 +30,31 @@ export default function NFTShowcase() {
   ];
 
   return (
-    <section id="nft-showcase" className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="nft-showcase" className="py-20 bg-muted/30 relative">
+      <div className="absolute inset-0 opacity-5">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute text-patriot-blue text-6xl"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+          >
+            ★
+          </div>
+        ))}
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            THE <span className="text-patriot-blue">NFT COLLECTION</span>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="text-4xl">⭐</span>
+            <span className="text-4xl">⭐</span>
+            <span className="text-4xl">⭐</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black mb-6">
+            THE <span className="bg-gradient-to-r from-patriot-red to-patriot-blue bg-clip-text text-transparent">NFT COLLECTION</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Three tiers of digital collectibles, each offering unique benefits and exclusive access to America's musical heritage.
@@ -48,15 +68,15 @@ export default function NFTShowcase() {
               className="group bg-card rounded-xl border border-card-border overflow-hidden hover-elevate transition-all duration-300"
               data-testid={`card-nft-${nft.id}`}
             >
-              <div className="aspect-square bg-gradient-to-br from-patriot-navy via-patriot-blue/50 to-patriot-red/30 relative overflow-hidden">
+              <div className="aspect-square bg-gradient-to-br from-patriot-navy via-patriot-red to-patriot-blue relative overflow-hidden border-4 border-patriot-gold">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white p-8">
-                    <Star className="h-16 w-16 mx-auto mb-4 text-patriot-gold" />
-                    <p className="font-serif text-2xl">250STAR</p>
+                    <div className="text-7xl mb-4">⭐</div>
+                    <p className="font-serif text-3xl font-bold text-patriot-gold">250STAR</p>
                   </div>
                 </div>
                 <div className="absolute top-4 right-4">
-                  <Badge className="bg-patriot-gold text-patriot-navy border-0">
+                  <Badge className="bg-white text-patriot-navy border-2 border-patriot-gold font-bold">
                     {nft.rarity}
                   </Badge>
                 </div>

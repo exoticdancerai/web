@@ -22,11 +22,16 @@ export default function HowToParticipate() {
   };
 
   return (
-    <section id="participate" className="py-20 bg-background">
+    <section id="participate" className="py-20 bg-gradient-to-br from-patriot-blue/10 to-patriot-red/10 relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-patriot-red via-white to-patriot-blue"></div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            HOW TO <span className="text-patriot-red">PARTICIPATE</span>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="text-5xl">🎯</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black mb-6">
+            HOW TO <span className="bg-gradient-to-r from-patriot-red to-patriot-blue bg-clip-text text-transparent">PARTICIPATE</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Join the 250STAR launch in three simple steps
@@ -36,10 +41,10 @@ export default function HowToParticipate() {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="text-center">
             <div className="relative inline-block mb-6">
-              <div className="w-20 h-20 rounded-full bg-patriot-red/10 flex items-center justify-center">
-                <Mail className="h-10 w-10 text-patriot-red" />
+              <div className="w-24 h-24 rounded-full bg-white border-4 border-patriot-red flex items-center justify-center shadow-xl">
+                <Mail className="h-12 w-12 text-patriot-red" />
               </div>
-              <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-patriot-red text-white flex items-center justify-center font-bold">
+              <div className="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-patriot-red text-white flex items-center justify-center font-bold text-xl border-2 border-white">
                 1
               </div>
             </div>
@@ -51,10 +56,10 @@ export default function HowToParticipate() {
 
           <div className="text-center">
             <div className="relative inline-block mb-6">
-              <div className="w-20 h-20 rounded-full bg-patriot-blue/10 flex items-center justify-center">
-                <Wallet className="h-10 w-10 text-patriot-blue" />
+              <div className="w-24 h-24 rounded-full bg-white border-4 border-patriot-blue flex items-center justify-center shadow-xl">
+                <Wallet className="h-12 w-12 text-patriot-blue" />
               </div>
-              <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-patriot-blue text-white flex items-center justify-center font-bold">
+              <div className="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-patriot-blue text-white flex items-center justify-center font-bold text-xl border-2 border-white">
                 2
               </div>
             </div>
@@ -66,10 +71,10 @@ export default function HowToParticipate() {
 
           <div className="text-center">
             <div className="relative inline-block mb-6">
-              <div className="w-20 h-20 rounded-full bg-patriot-gold/10 flex items-center justify-center">
-                <Award className="h-10 w-10 text-patriot-gold" />
+              <div className="w-24 h-24 rounded-full bg-white border-4 border-patriot-gold flex items-center justify-center shadow-xl">
+                <Award className="h-12 w-12 text-patriot-gold" />
               </div>
-              <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-patriot-gold text-patriot-navy flex items-center justify-center font-bold">
+              <div className="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-patriot-gold text-patriot-navy flex items-center justify-center font-bold text-xl border-2 border-white">
                 3
               </div>
             </div>
@@ -81,8 +86,11 @@ export default function HowToParticipate() {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="bg-card rounded-2xl border border-card-border p-8">
-            <h3 className="text-2xl font-bold mb-6 text-center">Join the Waitlist</h3>
+          <div className="bg-white rounded-2xl border-4 border-patriot-red p-8 shadow-2xl">
+            <div className="text-center mb-6">
+              <span className="text-5xl mb-3 block">⭐</span>
+              <h3 className="text-3xl font-black text-patriot-navy">JOIN THE WAITLIST</h3>
+            </div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="name">Full Name</Label>
@@ -112,10 +120,10 @@ export default function HowToParticipate() {
               </div>
               <Button
                 type="submit"
-                className="w-full h-12 bg-patriot-red hover:bg-patriot-red-hover text-white text-lg"
+                className="w-full h-14 bg-patriot-red hover:bg-patriot-red-hover text-white text-xl font-bold border-2 border-white shadow-xl"
                 data-testid="button-submit-waitlist"
               >
-                Join Waitlist Now
+                ⭐ JOIN WAITLIST NOW ⭐
               </Button>
             </form>
             <p className="text-sm text-muted-foreground text-center mt-6">

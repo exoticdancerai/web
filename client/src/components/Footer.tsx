@@ -3,13 +3,29 @@ import { FaDiscord, FaTelegram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-patriot-navy text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-b from-patriot-navy to-black text-white py-12 border-t-4 border-patriot-gold relative overflow-hidden">
+      <div className="absolute inset-0 opacity-5">
+        {[...Array(30)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute text-white text-4xl"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+          >
+            ★
+          </div>
+        ))}
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl font-serif text-patriot-gold">250</span>
-              <span className="text-xl font-bold">STAR</span>
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-3xl">⭐</span>
+              <span className="text-3xl font-serif font-bold text-patriot-gold">250</span>
+              <span className="text-2xl font-black">STAR</span>
             </div>
             <p className="text-white/70 text-sm">
               The first National Anthem NFT commemorating America's 250th anniversary.

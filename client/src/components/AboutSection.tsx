@@ -2,12 +2,17 @@ import { Music2, Award, Globe } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-muted/30">
+    <section id="about" className="py-20 bg-gradient-to-br from-patriot-red/10 via-white to-patriot-blue/10 relative">
+      <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-r from-patriot-blue via-white to-patriot-red"></div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              MEET <span className="text-patriot-blue">HANNAH MAGNELLI</span>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-4xl">🎤</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black mb-6">
+              MEET <span className="bg-gradient-to-r from-patriot-red to-patriot-blue bg-clip-text text-transparent">HANNAH MAGNELLI</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
               Professional mezzo-soprano with a passion for American musical heritage. Hannah's powerful voice brings new life to our national anthem.
@@ -60,26 +65,30 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-patriot-red to-patriot-blue rounded-2xl p-8 md:p-12 text-white">
+        <div className="bg-gradient-to-br from-patriot-red via-white to-patriot-blue rounded-2xl p-8 md:p-12 border-4 border-patriot-gold shadow-2xl">
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold mb-4">America250 Partnership</h3>
-            <p className="text-white/90 max-w-3xl mx-auto">
+            <div className="text-6xl mb-4">🇺🇸</div>
+            <h3 className="text-4xl font-black mb-4 text-patriot-navy">America250 Partnership</h3>
+            <p className="text-patriot-navy font-medium max-w-3xl mx-auto text-lg">
               Anthem250 is proud to partner with America250.org, the official organization commemorating the United States' semiquincentennial.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
-              <div className="text-3xl font-serif font-bold text-patriot-gold mb-2">Official</div>
-              <p className="text-sm">Recognized Partnership</p>
+            <div className="bg-white border-2 border-patriot-navy rounded-xl p-6 text-center shadow-lg">
+              <div className="text-4xl mb-2">⭐</div>
+              <div className="text-3xl font-serif font-bold text-patriot-red mb-2">Official</div>
+              <p className="text-sm text-patriot-navy font-medium">Recognized Partnership</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
-              <div className="text-3xl font-serif font-bold text-patriot-gold mb-2">Historic</div>
-              <p className="text-sm">250 Year Milestone</p>
+            <div className="bg-white border-2 border-patriot-navy rounded-xl p-6 text-center shadow-lg">
+              <div className="text-4xl mb-2">🗽</div>
+              <div className="text-3xl font-serif font-bold text-patriot-blue mb-2">Historic</div>
+              <p className="text-sm text-patriot-navy font-medium">250 Year Milestone</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+            <div className="bg-white border-2 border-patriot-navy rounded-xl p-6 text-center shadow-lg">
+              <div className="text-4xl mb-2">🦅</div>
               <div className="text-3xl font-serif font-bold text-patriot-gold mb-2">Legacy</div>
-              <p className="text-sm">Digital Preservation</p>
+              <p className="text-sm text-patriot-navy font-medium">Digital Preservation</p>
             </div>
           </div>
         </div>
