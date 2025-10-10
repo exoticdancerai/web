@@ -48,7 +48,7 @@ export default function HeroSection() {
           <span className="text-4xl">⭐</span>
         </div>
         
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 tracking-tight leading-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-tight">
           THE FIRST
           <br />
           <span className="bg-gradient-to-r from-patriot-red via-white to-patriot-blue bg-clip-text text-transparent">NATIONAL ANTHEM</span>
@@ -56,7 +56,7 @@ export default function HeroSection() {
           <span className="text-patriot-gold font-serif">NFT</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-white/90 mb-12 max-w-3xl mx-auto">
           Own a piece of America's 250th anniversary. Professional mezzo soprano Hannah Magnelli performs the Star-Spangled Banner as a unique digital collectible.
         </p>
 
