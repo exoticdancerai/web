@@ -4,11 +4,12 @@ import HeroSection from "@/components/HeroSection";
 import CountdownTimer from "@/components/CountdownTimer";
 import VideoSection from "@/components/VideoSection";
 import MissionSection from "@/components/MissionSection";
+import ChoosePath from "@/components/ChoosePath";
+import AboutSection from "@/components/AboutSection";
 import NFTShowcase from "@/components/NFTShowcase";
 import Timeline from "@/components/Timeline";
 import Tokenomics from "@/components/Tokenomics";
 import HowToParticipate from "@/components/HowToParticipate";
-import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -21,11 +22,12 @@ export default function Home() {
         <CountdownTimer />
         <VideoSection />
         <MissionSection />
+        <ChoosePath />
+        <AboutSection />
         <NFTShowcase />
         <Timeline />
         <Tokenomics />
         <HowToParticipate />
-        <AboutSection />
       </main>
       <Footer />
     </div>

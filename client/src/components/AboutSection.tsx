@@ -6,51 +6,30 @@ export default function AboutSection() {
       <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-r from-patriot-blue via-white to-patriot-red"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-black mb-4">
+            MEET HANNAH MAGNELLI
+          </h2>
+          <p className="text-2xl text-patriot-gold font-semibold">PROFESSIONAL MEZZO SOPRANO</p>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <span className="text-4xl">🎤</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-black mb-6">
-              MEET <span className="bg-gradient-to-r from-patriot-red to-patriot-blue bg-clip-text text-transparent">HANNAH MAGNELLI</span>
-            </h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              Professional mezzo-soprano with a passion for American musical heritage. Hannah's powerful voice brings new life to our national anthem.
+            <div className="text-5xl mb-4">🎭 FEATURED PERFORMER</div>
+            <p className="text-lg mb-6">
+              Hannah Magnelli is a professional mezzo soprano who is making history as the first artist to create an NFT of the US National Anthem. Her rich lyric voice has been praised as "one of the most beautiful and rich lyric mezzo voices I've heard in years."
             </p>
-            <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-patriot-red/10 flex items-center justify-center">
-                  <Music2 className="h-5 w-5 text-patriot-red" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Acclaimed Performer</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Performed at prestigious venues across the United States
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-patriot-blue/10 flex items-center justify-center">
-                  <Award className="h-5 w-5 text-patriot-blue" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Award-Winning Artist</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Recognized for excellence in classical and patriotic performances
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-patriot-gold/10 flex items-center justify-center">
-                  <Globe className="h-5 w-5 text-patriot-gold" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Cultural Ambassador</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Dedicated to preserving and sharing American musical traditions
-                  </p>
-                </div>
-              </div>
+            <p className="text-lg mb-6">
+              With her advanced classical training and professional performance experience, Hannah brings unparalleled artistry to America's most treasured song. Her powerful interpretation of 'The Star-Spangled Banner' combines classical precision with heartfelt patriotism.
+            </p>
+            <p className="text-lg mb-6">
+              By combining her classical excellence with groundbreaking digital innovation, Hannah offers patriotic Americans the opportunity to own a piece of American heritage in the form of this historic NFT, commemorating our nation's 250th anniversary.
+            </p>
+            <div className="bg-patriot-gold/10 border-l-4 border-patriot-gold p-6 rounded-r-lg">
+              <p className="text-lg italic mb-2">
+                "One of the most beautiful and rich lyric mezzo voices I've heard in years."
+              </p>
+              <p className="text-sm text-muted-foreground">- Richard Nechamkin, Mississippi Opera</p>
             </div>
           </div>
 
@@ -61,6 +40,28 @@ export default function AboutSection() {
                 <p className="text-lg font-medium">Hannah Magnelli</p>
                 <p className="text-sm text-white/70 mt-2">Mezzo-Soprano</p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <h3 className="text-3xl font-black mb-8 text-center">Professional Highlights</h3>
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="bg-white rounded-xl p-6 border-2 border-patriot-blue text-center">
+              <h4 className="text-xl font-bold text-patriot-blue mb-2">Classical Training</h4>
+              <p className="text-sm text-muted-foreground">Professionally trained mezzo soprano with years of performance experience</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-2 border-patriot-red text-center">
+              <h4 className="text-xl font-bold text-patriot-red mb-2">Historic Achievement</h4>
+              <p className="text-sm text-muted-foreground">First artist to create an NFT of America's National Anthem</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-2 border-patriot-gold text-center">
+              <h4 className="text-xl font-bold text-patriot-gold mb-2">America250 Official</h4>
+              <p className="text-sm text-muted-foreground">Commemorating the United States' 250th Anniversary</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-2 border-patriot-navy text-center">
+              <h4 className="text-xl font-bold text-patriot-navy mb-2">Performance Features</h4>
+              <p className="text-sm text-muted-foreground">🏛️ Capitol Dome • 🔔 Liberty Bell • 🗽 Historic Sites</p>
             </div>
           </div>
         </div>
