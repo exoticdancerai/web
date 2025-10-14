@@ -9,6 +9,8 @@ import AboutSection from "@/components/AboutSection";
 import NFTShowcase from "@/components/NFTShowcase";
 import Timeline from "@/components/Timeline";
 import Tokenomics from "@/components/Tokenomics";
+import RoadmapSection from "@/components/RoadmapSection";
+import TransparencySection from "@/components/TransparencySection";
 import HowToParticipate from "@/components/HowToParticipate";
 import Footer from "@/components/Footer";
 
@@ -27,6 +29,8 @@ export default function Home() {
         <NFTShowcase />
         <Timeline />
         <Tokenomics />
+        <RoadmapSection />
+        <TransparencySection />
         <HowToParticipate />
       </main>
       <Footer />

@@ -22,10 +22,10 @@ export default function Tokenomics() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-patriot-red">250STAR</span> TOKENOMICS
+            <span className="text-patriot-red">NAT250</span> TOKEN ECONOMICS
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Transparent token economics designed for long-term value and community growth
+            Transparent tokenomics designed for sustainable growth and community empowerment
           </p>
         </div>
 
@@ -90,7 +90,7 @@ export default function Tokenomics() {
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-patriot-red/10 mb-4">
               <Coins className="h-6 w-6 text-patriot-red" />
             </div>
-            <div className="text-3xl font-bold mb-2 font-serif text-patriot-gold">1.77B</div>
+            <div className="text-3xl font-bold mb-2 font-serif text-patriot-gold">17.76M</div>
             <div className="text-sm text-muted-foreground">Total Supply</div>
           </div>
 
