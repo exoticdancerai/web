@@ -40,61 +40,63 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-        <div className="mb-8 inline-flex items-center gap-3">
-          <span className="text-4xl">⭐</span>
-          <span className="inline-block px-6 py-3 bg-white text-patriot-navy text-lg font-bold rounded-md shadow-2xl">
-            AMERICA'S 250TH ANNIVERSARY
-          </span>
-          <span className="text-4xl">⭐</span>
-        </div>
-        
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-tight">
-          THE FIRST
+          Own Part of
           <br />
-          <span className="bg-gradient-to-r from-patriot-red via-white to-patriot-blue bg-clip-text text-transparent">NATIONAL ANTHEM</span>
-          <br />
-          <span className="text-patriot-gold font-serif">NFT</span>
+          <span className="bg-gradient-to-r from-patriot-red via-white to-patriot-blue bg-clip-text text-transparent">American History</span>
         </h1>
         
-        <p className="text-lg md:text-xl text-white/90 mb-12 max-w-3xl mx-auto">
-          Own a piece of America's 250th anniversary. Professional mezzo soprano Hannah Magnelli performs the Star-Spangled Banner as a unique digital collectible.
+        <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+          The first EVER National Anthem NFT commemorating America's 250th anniversary
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="mb-12">
+          <p className="text-xl md:text-2xl text-patriot-gold font-semibold mb-6">
+            Get exclusive presale access to the NAT250 token launch
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <Button
             onClick={() => scrollToSection("participate")}
             className="bg-patriot-red hover:bg-patriot-red-hover text-white h-16 px-10 text-xl font-bold shadow-2xl border-2 border-white"
             data-testid="button-join-waitlist-hero"
           >
-            ★ JOIN WAITLIST ★
-          </Button>
-          <Button
-            onClick={() => scrollToSection("mission")}
-            variant="outline"
-            className="h-16 px-10 text-xl font-bold border-4 border-white bg-white/10 hover:bg-white/30 text-white backdrop-blur-md shadow-2xl"
-            data-testid="button-learn-more"
-          >
-            <Play className="mr-2 h-6 w-6" />
-            WATCH VIDEO
+            Get Early Access
           </Button>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-left mb-12">
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+            <h3 className="text-white font-bold mb-2">What is it?</h3>
+            <p className="text-white/80 text-sm">Digital collectible of the National Anthem performed by Hannah Magnelli</p>
+          </div>
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+            <h3 className="text-white font-bold mb-2">How to buy?</h3>
+            <p className="text-white/80 text-sm">Connect Solana wallet (Phantom/Solflare) or use credit card via MoonPay</p>
+          </div>
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+            <h3 className="text-white font-bold mb-2">Chain & Requirements</h3>
+            <p className="text-white/80 text-sm">Solana blockchain • $1.77 per token • Low gas fees</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-patriot-gold font-serif">1776</div>
-            <div className="text-sm text-white/70 mt-1">Independence</div>
+            <div className="text-3xl md:text-4xl font-bold text-patriot-gold font-serif">$1.77</div>
+            <div className="text-sm text-white/70 mt-1">Per Token</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-patriot-gold font-serif">1.77B</div>
+            <div className="text-3xl md:text-4xl font-bold text-patriot-gold font-serif">17.76M</div>
             <div className="text-sm text-white/70 mt-1">Total Supply</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-patriot-gold font-serif">$17.76</div>
-            <div className="text-sm text-white/70 mt-1">Launch Price</div>
+            <div className="text-3xl md:text-4xl font-bold text-patriot-gold font-serif">2026</div>
+            <div className="text-sm text-white/70 mt-1">Launch Year</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-patriot-gold font-serif">2026</div>
-            <div className="text-sm text-white/70 mt-1">250th Year</div>
+            <div className="text-3xl md:text-4xl font-bold text-patriot-gold font-serif">Solana</div>
+            <div className="text-sm text-white/70 mt-1">Blockchain</div>
           </div>
         </div>
       </div>
