@@ -76,21 +76,27 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Community</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://discord.gg/NTQYbXW5RX"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
                 data-testid="link-discord"
               >
                 <FaDiscord className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://t.me/NationalAnthem250"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
                 data-testid="link-telegram"
               >
                 <FaTelegram className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/NationalAnthem250"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
                 data-testid="link-twitter"
               >
