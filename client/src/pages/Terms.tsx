@@ -2,10 +2,16 @@ import { Card } from "@/components/ui/card";
 import { FileText, AlertTriangle, Shield, Info, Mail } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import SocialMediaBar from "@/components/SocialMediaBar";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Terms() {
   return (
     <div className="min-h-screen bg-background">
+      <SocialMediaBar />
+      <Header />
+      
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
           <Button variant="outline" data-testid="button-back-home" asChild>
@@ -251,6 +257,7 @@ export default function Terms() {
           </Button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

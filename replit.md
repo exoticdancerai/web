@@ -151,5 +151,7 @@ The application uses Drizzle ORM which provides flexibility for different databa
 - Custom video background implementation with autoplay handling
 
 ### Social Media Integration
-- Links to Twitter, Facebook, Instagram, YouTube, Telegram, Discord, WhatsApp, TikTok, LinkedIn, Reddit, Pinterest, Truth Social, Gettr
-- Social media bar component with branded icons
+- **Sticky Social Media Bar** at top of all pages (position: sticky, z-index 60)
+- Links to all 13 platforms: Twitter, Facebook, Instagram, YouTube, Telegram, Discord, WhatsApp, TikTok, LinkedIn, Reddit, Pinterest, Truth Social, Gettr
+- Remains visible when scrolling for easy access across all pages
+- Social media bar component with branded icons using react-icons (no emojis)
