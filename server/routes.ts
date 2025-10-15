@@ -4,6 +4,29 @@ import { storage } from "./storage";
 import { sendWaitlistEmail } from "./gmail";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  app.get("/api/gmail/check", async (req, res) => {
+    try {
+      const { getUncachableGmailClient } = await import("./gmail");
+      const gmail = await getUncachableGmailClient();
+      const profile = await gmail.users.getProfile({ userId: 'me' });
+      
+      res.json({ 
+        success: true, 
+        connected: true,
+        email: profile.data.emailAddress,
+        message: "Gmail connection is working" 
+      });
+    } catch (error: any) {
+      console.error("Gmail connection error:", error);
+      res.status(500).json({ 
+        success: false, 
+        connected: false,
+        error: error.message,
+        message: "Gmail connection failed" 
+      });
+    }
+  });
+
   app.post("/api/waitlist", async (req, res) => {
     try {
       const { name, email } = req.body;
