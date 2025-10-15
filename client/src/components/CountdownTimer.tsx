@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Flag, Star } from "lucide-react";
 
 export default function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({
@@ -35,10 +36,18 @@ export default function CountdownTimer() {
     <section className="py-16 bg-gradient-to-r from-patriot-navy via-patriot-blue to-patriot-navy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-2">
-            🇺🇸 Until America's 250th Anniversary 🇺🇸
-          </h2>
-          <p className="text-xl text-patriot-gold mb-8">⭐ Independence Day 2026 ⭐</p>
+          <div className="flex items-center justify-center gap-3 mb-2">
+            <Flag className="h-8 w-8 text-white" />
+            <h2 className="text-3xl md:text-4xl font-black text-white">
+              Until America's 250th Anniversary
+            </h2>
+            <Flag className="h-8 w-8 text-white" />
+          </div>
+          <div className="flex items-center justify-center gap-2 mb-8">
+            <Star className="h-6 w-6 text-patriot-gold" />
+            <p className="text-xl text-patriot-gold">Independence Day 2026</p>
+            <Star className="h-6 w-6 text-patriot-gold" />
+          </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border-2 border-patriot-gold">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Mail, Wallet, Award } from "lucide-react";
+import { Mail, Wallet, Award, Target, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export default function HowToParticipate() {
@@ -15,7 +15,7 @@ export default function HowToParticipate() {
     console.log("Waitlist submission:", { email, name });
     toast({
       title: "Welcome to the waitlist!",
-      description: "You'll receive updates about the 250STAR launch.",
+      description: "You'll receive updates about the NAT250 launch.",
     });
     setEmail("");
     setName("");
@@ -28,13 +28,13 @@ export default function HowToParticipate() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="text-5xl">🎯</span>
+            <Target className="h-12 w-12 text-patriot-red" />
           </div>
           <h2 className="text-4xl md:text-5xl font-black mb-6">
             HOW TO <span className="bg-gradient-to-r from-patriot-red to-patriot-blue bg-clip-text text-transparent">PARTICIPATE</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join the 250STAR launch in three simple steps
+            Join the NAT250 launch in three simple steps
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function HowToParticipate() {
             </div>
             <h3 className="text-xl font-bold mb-3">Own History</h3>
             <p className="text-muted-foreground">
-              Receive your 250STAR NFT and become part of America's digital heritage
+              Receive your NAT250 NFT and become part of America's digital heritage
             </p>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function HowToParticipate() {
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-2xl border-4 border-patriot-red p-8 shadow-2xl">
             <div className="text-center mb-6">
-              <span className="text-5xl mb-3 block">⭐</span>
+              <Star className="h-16 w-16 text-patriot-gold mx-auto mb-3" />
               <h3 className="text-3xl font-black text-patriot-navy">JOIN THE WAITLIST</h3>
             </div>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -123,7 +123,7 @@ export default function HowToParticipate() {
                 className="w-full h-14 bg-patriot-red hover:bg-patriot-red-hover text-white text-xl font-bold border-2 border-white shadow-xl"
                 data-testid="button-submit-waitlist"
               >
-                ⭐ JOIN WAITLIST NOW ⭐
+JOIN WAITLIST NOW
               </Button>
             </form>
             <p className="text-sm text-muted-foreground text-center mt-6">

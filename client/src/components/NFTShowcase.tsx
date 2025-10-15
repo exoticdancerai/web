@@ -49,9 +49,9 @@ export default function NFTShowcase() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="text-4xl">⭐</span>
-            <span className="text-4xl">⭐</span>
-            <span className="text-4xl">⭐</span>
+            <Star className="h-10 w-10 text-patriot-gold" />
+            <Star className="h-10 w-10 text-patriot-gold" />
+            <Star className="h-10 w-10 text-patriot-gold" />
           </div>
           <h2 className="text-4xl md:text-5xl font-black mb-6">
             THE <span className="bg-gradient-to-r from-patriot-red to-patriot-blue bg-clip-text text-transparent">NFT COLLECTION</span>
@@ -71,8 +71,8 @@ export default function NFTShowcase() {
               <div className="aspect-square bg-gradient-to-br from-patriot-navy via-patriot-red to-patriot-blue relative overflow-hidden border-4 border-patriot-gold">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white p-8">
-                    <div className="text-7xl mb-4">⭐</div>
-                    <p className="font-serif text-3xl font-bold text-patriot-gold">250STAR</p>
+                    <Star className="h-20 w-20 text-patriot-gold mb-4" />
+                    <p className="font-serif text-3xl font-bold text-patriot-gold">NAT250</p>
                   </div>
                 </div>
                 <div className="absolute top-4 right-4">

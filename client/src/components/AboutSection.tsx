@@ -1,4 +1,4 @@
-import { Music2, Award, Globe } from "lucide-react";
+import { Music2, Award, Globe, Mic2, Flag, Star, Building2, Bell, Landmark } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -15,7 +15,10 @@ export default function AboutSection() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <div className="text-5xl mb-4">🎭 FEATURED PERFORMER</div>
+            <div className="flex items-center gap-3 mb-4">
+              <Music2 className="h-12 w-12 text-patriot-red" />
+              <h3 className="text-2xl font-bold">FEATURED PERFORMER</h3>
+            </div>
             <p className="text-lg mb-6">
               Hannah Magnelli is a professional mezzo soprano who is making history as the first artist to create an NFT of the US National Anthem. Her rich lyric voice has been praised as "one of the most beautiful and rich lyric mezzo voices I've heard in years."
             </p>
@@ -36,7 +39,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-patriot-navy to-patriot-blue flex items-center justify-center text-white overflow-hidden">
               <div className="text-center p-8">
-                <div className="text-6xl mb-4">🎤</div>
+                <Mic2 className="h-20 w-20 mb-4" />
                 <p className="text-lg font-medium">Hannah Magnelli</p>
                 <p className="text-sm text-white/70 mt-2">Mezzo-Soprano</p>
               </div>
@@ -61,14 +64,23 @@ export default function AboutSection() {
             </div>
             <div className="bg-white rounded-xl p-6 border-2 border-patriot-navy text-center">
               <h4 className="text-xl font-bold text-patriot-navy mb-2">Performance Features</h4>
-              <p className="text-sm text-muted-foreground">🏛️ Capitol Dome • 🔔 Liberty Bell • 🗽 Historic Sites</p>
+              <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                <Building2 className="h-4 w-4" />
+                <span>Capitol Dome</span>
+                <span>•</span>
+                <Bell className="h-4 w-4" />
+                <span>Liberty Bell</span>
+                <span>•</span>
+                <Landmark className="h-4 w-4" />
+                <span>Historic Sites</span>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="bg-gradient-to-br from-patriot-red via-white to-patriot-blue rounded-2xl p-8 md:p-12 border-4 border-patriot-gold shadow-2xl">
           <div className="text-center mb-8">
-            <div className="text-6xl mb-4">🇺🇸</div>
+            <Flag className="h-16 w-16 text-patriot-red mx-auto mb-4" />
             <h3 className="text-4xl font-black mb-4 text-patriot-navy">America250 Partnership</h3>
             <p className="text-patriot-navy font-medium max-w-3xl mx-auto text-lg">
               Anthem250 is proud to partner with America250.org, the official organization commemorating the United States' semiquincentennial.
@@ -77,17 +89,17 @@ export default function AboutSection() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white border-2 border-patriot-navy rounded-xl p-6 text-center shadow-lg">
-              <div className="text-4xl mb-2">⭐</div>
+              <Star className="h-10 w-10 text-patriot-gold mx-auto mb-2" />
               <div className="text-3xl font-serif font-bold text-patriot-red mb-2">Official</div>
               <p className="text-sm text-patriot-navy font-medium">Recognized Partnership</p>
             </div>
             <div className="bg-white border-2 border-patriot-navy rounded-xl p-6 text-center shadow-lg">
-              <div className="text-4xl mb-2">🗽</div>
+              <Landmark className="h-10 w-10 text-patriot-blue mx-auto mb-2" />
               <div className="text-3xl font-serif font-bold text-patriot-blue mb-2">Historic</div>
               <p className="text-sm text-patriot-navy font-medium">250 Year Milestone</p>
             </div>
             <div className="bg-white border-2 border-patriot-navy rounded-xl p-6 text-center shadow-lg">
-              <div className="text-4xl mb-2">🦅</div>
+              <Award className="h-10 w-10 text-patriot-gold mx-auto mb-2" />
               <div className="text-3xl font-serif font-bold text-patriot-gold mb-2">Legacy</div>
               <p className="text-sm text-patriot-navy font-medium">Digital Preservation</p>
             </div>

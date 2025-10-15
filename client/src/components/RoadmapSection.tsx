@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Rocket, Users, Trophy, Star } from "lucide-react";
+import { Rocket, Users, Trophy, Star, Calendar } from "lucide-react";
 
 export default function RoadmapSection() {
   const phases = [
@@ -114,7 +114,10 @@ export default function RoadmapSection() {
 
         <div className="mt-16 text-center">
           <Card className="inline-block p-8 border-2 border-patriot-gold">
-            <h3 className="text-2xl font-bold mb-4">🗓️ Key Milestone</h3>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Calendar className="h-8 w-8 text-patriot-red" />
+              <h3 className="text-2xl font-bold">Key Milestone</h3>
+            </div>
             <div className="text-5xl font-black text-patriot-red mb-2">July 4, 2026</div>
             <p className="text-xl text-muted-foreground">America's 250th Independence Day</p>
           </Card>

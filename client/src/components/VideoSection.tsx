@@ -1,3 +1,5 @@
+import { Music } from "lucide-react";
+
 export default function VideoSection() {
   return (
     <section className="py-20 bg-background">
@@ -9,9 +11,12 @@ export default function VideoSection() {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
             Listen to this beautiful interpretation of 'The Star-Spangled Banner' that will be preserved for America's 250th anniversary
           </p>
-          <p className="text-lg text-patriot-gold font-semibold">
-            🎵 This is the exact performance that will become part of America's historical record
-          </p>
+          <div className="flex items-center justify-center gap-2">
+            <Music className="h-6 w-6 text-patriot-gold" />
+            <p className="text-lg text-patriot-gold font-semibold">
+              This is the exact performance that will become part of America's historical record
+            </p>
+          </div>
         </div>
 
         <div className="max-w-4xl mx-auto">

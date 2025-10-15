@@ -1,4 +1,4 @@
-import { Calendar } from "lucide-react";
+import { Calendar, Star } from "lucide-react";
 
 export default function Timeline() {
   const events = [
@@ -69,7 +69,7 @@ export default function Timeline() {
                 
                 <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center justify-center">
                   <div className="w-20 h-20 rounded-full bg-white border-4 border-patriot-gold flex items-center justify-center z-10 shadow-2xl">
-                    <span className="text-4xl">⭐</span>
+                    <Star className="h-10 w-10 text-patriot-gold" />
                   </div>
                 </div>
 

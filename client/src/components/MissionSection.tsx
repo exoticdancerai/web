@@ -1,4 +1,4 @@
-import { Flag, Music, History } from "lucide-react";
+import { Flag, Music, History, Eye, Target, Star, Users, Shield, Heart } from "lucide-react";
 
 export default function MissionSection() {
   return (
@@ -17,28 +17,30 @@ export default function MissionSection() {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="bg-gradient-to-br from-patriot-blue/10 to-patriot-red/10 rounded-2xl p-8 border-2 border-patriot-blue">
-            <div className="text-6xl mb-4">🔮</div>
+            <div className="mb-4">
+              <Eye className="h-16 w-16 text-patriot-blue" />
+            </div>
             <h3 className="text-3xl font-black mb-4">OUR VISION</h3>
             <p className="text-lg mb-6">
               To be the premier platform for patriotic NFTs and American commemorative digital collectibles, preserving our nation's musical heritage through blockchain technology for future generations to own and treasure.
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <span className="text-2xl">⭐</span>
+                <Star className="h-6 w-6 text-patriot-gold mt-1" />
                 <div>
                   <p className="font-bold">Preserve History:</p>
                   <p className="text-muted-foreground">Digitally preserve America's musical treasures for posterity</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xl">🇺🇸</span>
+                <Flag className="h-6 w-6 text-patriot-red mt-1" />
                 <div>
                   <p className="font-bold">Celebrate Heritage:</p>
                   <p className="text-muted-foreground">Honor the cultural significance of our National Anthem</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xl">🚀</span>
+                <Music className="h-6 w-6 text-patriot-blue mt-1" />
                 <div>
                   <p className="font-bold">Innovate Tradition:</p>
                   <p className="text-muted-foreground">Blend timeless American values with cutting-edge blockchain technology</p>
@@ -48,35 +50,37 @@ export default function MissionSection() {
           </div>
 
           <div className="bg-gradient-to-br from-patriot-red/10 to-patriot-gold/10 rounded-2xl p-8 border-2 border-patriot-red">
-            <div className="text-6xl mb-4">🎯</div>
+            <div className="mb-4">
+              <Target className="h-16 w-16 text-patriot-red" />
+            </div>
             <h3 className="text-3xl font-black mb-4">OUR MISSION</h3>
             <p className="text-lg mb-6">
               Create accessible, meaningful digital collectibles that enable every American to own a piece of our nation's 250th anniversary celebration, while supporting professional artists and preserving cultural heritage.
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <span className="text-2xl">💎</span>
+                <Star className="h-6 w-6 text-patriot-gold mt-1" />
                 <div>
                   <p className="font-bold">Democratize Ownership:</p>
                   <p className="text-muted-foreground">Make historical memorabilia accessible to all Americans</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xl">🎵</span>
+                <Music className="h-6 w-6 text-patriot-blue mt-1" />
                 <div>
                   <p className="font-bold">Support Artists:</p>
                   <p className="text-muted-foreground">Empower professional musicians with innovative revenue streams</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xl">🤝</span>
+                <Users className="h-6 w-6 text-patriot-red mt-1" />
                 <div>
                   <p className="font-bold">Build Community:</p>
                   <p className="text-muted-foreground">Unite patriotic Americans in celebrating our shared heritage</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xl">🔒</span>
+                <Shield className="h-6 w-6 text-patriot-navy mt-1" />
                 <div>
                   <p className="font-bold">Ensure Security:</p>
                   <p className="text-muted-foreground">Provide transparent, secure blockchain-based authenticity</p>
