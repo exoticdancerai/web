@@ -23,21 +23,6 @@ export default function HeroSection() {
         <div className="absolute top-[48%] left-0 right-0 h-[8%] bg-patriot-red"></div>
       </div>
       
-      <div className="absolute inset-0">
-        {[...Array(50)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute text-white/5"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              fontSize: `${Math.random() * 20 + 10}px`,
-            }}
-          >
-            ★
-          </div>
-        ))}
-      </div>
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-tight">

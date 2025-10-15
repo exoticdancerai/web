@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Shield, FileCheck, Lock, TrendingUp, Clock, Users } from "lucide-react";
+import { Shield, FileCheck, Lock, TrendingUp, Clock, Users, Check } from "lucide-react";
 
 export default function TransparencySection() {
   return (
@@ -23,7 +23,10 @@ export default function TransparencySection() {
             <p className="text-sm text-muted-foreground mb-4">
               Professionally audited by leading blockchain security firms
             </p>
-            <div className="text-2xl font-bold text-patriot-blue">✓ Verified</div>
+            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-patriot-blue">
+              <Check className="h-6 w-6" />
+              <span>Verified</span>
+            </div>
           </Card>
 
           <Card className="p-8 text-center">
@@ -121,7 +124,10 @@ export default function TransparencySection() {
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-sm font-medium">Audit Status</span>
-                <span className="text-sm text-green-600 font-bold">✓ Passed</span>
+                <span className="flex items-center gap-1 text-sm text-green-600 font-bold">
+                  <Check className="h-4 w-4" />
+                  <span>Passed</span>
+                </span>
               </div>
             </div>
           </Card>

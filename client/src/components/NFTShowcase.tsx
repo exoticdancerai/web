@@ -31,20 +31,6 @@ export default function NFTShowcase() {
 
   return (
     <section id="nft-showcase" className="py-20 bg-muted/30 relative">
-      <div className="absolute inset-0 opacity-5">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute text-patriot-blue text-6xl"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-          >
-            ★
-          </div>
-        ))}
-      </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">

@@ -63,7 +63,7 @@ export default function Header() {
               className="bg-patriot-red hover:bg-patriot-red-hover text-white h-12 px-6 font-bold border-2 border-white shadow-lg"
               data-testid="button-join-waitlist-header"
             >
-              ★ JOIN WAITLIST
+JOIN WAITLIST
             </Button>
           </nav>
 
