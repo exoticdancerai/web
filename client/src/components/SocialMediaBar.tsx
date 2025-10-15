@@ -9,7 +9,7 @@ const socialLinks = [
   { name: "Discord", icon: FaDiscord, url: "https://discord.gg/NTQYbXW5RX" },
   { name: "WhatsApp", icon: FaWhatsapp, url: "https://www.whatsapp.com/channel/0029VbBALc1DZ4LTR8A7sT3F" },
   { name: "TikTok", icon: FaTiktok, url: "https://www.tiktok.com/@NationalAnthem250" },
-  { name: "LinkedIn", icon: FaLinkedin, url: "https://www.linkedin.com/in/NationalAnthem250/" },
+  { name: "LinkedIn", icon: FaLinkedin, url: "https://www.linkedin.com/in/anthem250/" },
   { name: "Reddit", icon: FaReddit, url: "https://www.reddit.com/user/NationalAnthem250/" },
   { name: "Pinterest", icon: FaPinterest, url: "https://www.pinterest.com/NationalAnthem250/" },
   { name: "Truth Social", icon: FaGlobe, url: "https://truthsocial.com/@NationalAnthem250" },
