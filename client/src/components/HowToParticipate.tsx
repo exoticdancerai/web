@@ -10,15 +10,40 @@ export default function HowToParticipate() {
   const [name, setName] = useState("");
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Waitlist submission:", { email, name });
-    toast({
-      title: "Welcome to the waitlist!",
-      description: "You'll receive updates about the NAT250 launch.",
-    });
-    setEmail("");
-    setName("");
+    
+    try {
+      const response = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Welcome to the waitlist!",
+          description: "You'll receive updates about the NAT250 launch.",
+        });
+        setEmail("");
+        setName("");
+      } else {
+        toast({
+          title: "Error",
+          description: "Failed to join waitlist. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error("Waitlist submission error:", error);
+      toast({
+        title: "Error",
+        description: "Failed to join waitlist. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
