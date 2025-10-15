@@ -1,28 +1,26 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { sendWaitlistEmail } from "./gmail";
+import { sendWaitlistEmail } from "./email";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  app.get("/api/gmail/check", async (req, res) => {
+  app.get("/api/email/check", async (req, res) => {
     try {
-      const { getUncachableGmailClient } = await import("./gmail");
-      const gmail = await getUncachableGmailClient();
-      const profile = await gmail.users.getProfile({ userId: 'me' });
+      const hasApiKey = !!process.env.RESEND_API_KEY;
       
       res.json({ 
         success: true, 
-        connected: true,
-        email: profile.data.emailAddress,
-        message: "Gmail connection is working" 
+        configured: hasApiKey,
+        service: "Resend",
+        message: hasApiKey ? "Email service is configured" : "Resend API key not found" 
       });
     } catch (error: any) {
-      console.error("Gmail connection error:", error);
+      console.error("Email check error:", error);
       res.status(500).json({ 
         success: false, 
-        connected: false,
+        configured: false,
         error: error.message,
-        message: "Gmail connection failed" 
+        message: "Email check failed" 
       });
     }
   });
