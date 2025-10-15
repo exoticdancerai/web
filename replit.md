@@ -103,6 +103,13 @@ The application uses Drizzle ORM which provides flexibility for different databa
 - Content sourced from anthem250.com official legal documentation
 - Footer links to legal pages for easy access
 
+**Blog System:**
+- Blog listing page (/blog) featuring 4 articles from anthem250.com
+- Individual article detail pages (/blog/1-4) with full content and featured images
+- Cross-page navigation with header routing to homepage sections
+- Content: NFT heritage, Solana blockchain advantages, community governance, patriotic NFTs
+- External links to anthem250.com for additional resources
+
 ## External Dependencies
 
 ### Third-Party UI & Styling

@@ -1,16 +1,28 @@
 import { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [location, navigate] = useLocation();
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (location !== "/") {
+      navigate(`/#${id}`);
       setMobileMenuOpen(false);
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setMobileMenuOpen(false);
+      }
     }
   };
 
@@ -18,9 +30,11 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-patriot-navy via-patriot-red/20 to-patriot-navy backdrop-blur-md border-b-4 border-patriot-gold shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl font-black text-white">Anthem250</span>
-          </div>
+          <Link href="/">
+            <div className="flex items-center gap-2 cursor-pointer">
+              <span className="text-2xl font-black text-white">Anthem250</span>
+            </div>
+          </Link>
 
           <nav className="hidden md:flex items-center gap-8">
             <button
@@ -58,6 +72,9 @@ export default function Header() {
             >
               About
             </button>
+            <Link href="/blog" className="text-sm text-white/90 hover:text-white transition-colors" data-testid="link-blog">
+              Blog
+            </Link>
             <Button
               onClick={() => scrollToSection("participate")}
               className="bg-patriot-red hover:bg-patriot-red-hover text-white h-12 px-6 font-bold border-2 border-white shadow-lg"
@@ -115,6 +132,9 @@ JOIN WAITLIST
             >
               About
             </button>
+            <Link href="/blog" className="block w-full text-left text-white/90 hover:text-white py-2" data-testid="link-blog-mobile">
+              Blog
+            </Link>
             <Button
               onClick={() => scrollToSection("participate")}
               className="w-full bg-patriot-red hover:bg-patriot-red-hover text-white"

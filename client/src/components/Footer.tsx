@@ -40,6 +40,11 @@ export default function Footer() {
                   Tokenomics
                 </a>
               </li>
+              <li>
+                <Link href="/blog" className="text-white/70 hover:text-white transition-colors">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
 
