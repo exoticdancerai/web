@@ -12,7 +12,7 @@ const socialLinks = [
   { name: "LinkedIn", icon: FaLinkedin, url: "https://www.linkedin.com/in/anthem250/" },
   { name: "Reddit", icon: FaReddit, url: "https://www.reddit.com/user/Anthem250/" },
   { name: "Pinterest", icon: FaPinterest, url: "https://www.pinterest.com/NationalAnthem250/" },
-  { name: "Truth Social", icon: FaGlobe, url: "https://truthsocial.com/@NationalAnthem250" },
+  { name: "Truth Social", icon: FaGlobe, url: "https://truthsocial.com/@Anthem250" },
   { name: "Gettr", icon: FaGlobe, url: "https://gettr.com/user/NationalAnthem250" },
 ];
 
