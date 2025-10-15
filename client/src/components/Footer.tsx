@@ -94,7 +94,7 @@ export default function Footer() {
                 <FaTelegram className="h-5 w-5" />
               </a>
               <a
-                href="https://twitter.com/USAthem250"
+                href="https://x.com/USAnthem250"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
