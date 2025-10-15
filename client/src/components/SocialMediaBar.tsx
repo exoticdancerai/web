@@ -1,7 +1,7 @@
 import { FaTwitter, FaFacebook, FaInstagram, FaYoutube, FaTelegram, FaDiscord, FaWhatsapp, FaTiktok, FaLinkedin, FaReddit, FaPinterest, FaGlobe } from "react-icons/fa";
 
 const socialLinks = [
-  { name: "Twitter", icon: FaTwitter, url: "https://twitter.com/NationalAnthem250" },
+  { name: "Twitter", icon: FaTwitter, url: "https://twitter.com/USAthem250" },
   { name: "Facebook", icon: FaFacebook, url: "https://facebook.com/NationalAnthem250" },
   { name: "Instagram", icon: FaInstagram, url: "https://www.instagram.com/NationalAnthem250" },
   { name: "YouTube", icon: FaYoutube, url: "https://youtube.com/@NationalAnthem250" },
