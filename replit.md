@@ -2,7 +2,7 @@
 
 ## Overview
 
-Anthem250 is a full-stack web application for launching the NAT250 token - the first-ever NFT of the US National Anthem, performed by professional mezzo soprano Hannah Magnelli. The project commemorates America's 250th anniversary in 2026 by combining patriotic heritage with blockchain technology. The platform features a comprehensive marketing website with educational content for both crypto-native users and NFT beginners, countdown timer to Independence Day 2026, tokenomics visualization, and waitlist functionality.
+Anthem250 is a full-stack web application for launching the NAT250 token - the first-ever NFT of the US National Anthem, performed by professional mezzo soprano Hannah Magnelli. The project commemorates America's 250th anniversary in 2026 by combining patriotic heritage with blockchain technology. The platform features a comprehensive marketing website with educational content for both crypto-native users and NFT beginners, countdown timer to Independence Day 2026, tokenomics visualization, waitlist functionality, and comprehensive legal disclaimers.
 
 ## User Preferences
 
@@ -67,10 +67,11 @@ The application uses Drizzle ORM which provides flexibility for different databa
 - Dark mode support with CSS custom properties for theming
 
 **Component Architecture:**
-- Modular section-based components (Hero, Mission, NFT Showcase, Timeline, Tokenomics, etc.)
+- Modular section-based components (Hero, Mission, NFT Showcase, Timeline, Tokenomics, Disclaimer, etc.)
 - Reusable UI primitives from shadcn/ui (buttons, cards, dialogs, forms)
 - Responsive design with mobile-first approach
 - Accessibility built-in via Radix UI primitives
+- Comprehensive legal disclaimer section with financial warnings and risk notices
 
 ### Key Architectural Decisions
 

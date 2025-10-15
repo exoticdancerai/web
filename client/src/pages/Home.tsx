@@ -12,6 +12,7 @@ import Tokenomics from "@/components/Tokenomics";
 import RoadmapSection from "@/components/RoadmapSection";
 import TransparencySection from "@/components/TransparencySection";
 import HowToParticipate from "@/components/HowToParticipate";
+import DisclaimerSection from "@/components/DisclaimerSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         <RoadmapSection />
         <TransparencySection />
         <HowToParticipate />
+        <DisclaimerSection />
       </main>
       <Footer />
     </div>
