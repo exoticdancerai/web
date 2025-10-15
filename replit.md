@@ -72,6 +72,7 @@ The application uses Drizzle ORM which provides flexibility for different databa
 - Responsive design with mobile-first approach
 - Accessibility built-in via Radix UI primitives
 - Comprehensive legal disclaimer section with financial warnings and risk notices
+- Dedicated Terms & Conditions page with full legal documentation
 
 ### Key Architectural Decisions
 
@@ -95,6 +96,12 @@ The application uses Drizzle ORM which provides flexibility for different databa
 - "New to NFTs" path with educational content and simple onboarding
 - "Experienced with Crypto" path with technical tokenomics and roadmap details
 - Smart path selection component to guide appropriate user experience
+
+**Legal Documentation:**
+- Comprehensive disclaimer section on homepage (financial warnings, political independence, risk notices)
+- Dedicated Terms & Conditions page (/terms) with 11 legal sections
+- Content sourced from anthem250.com official legal documentation
+- Footer links to legal pages for easy access
 
 ## External Dependencies
 

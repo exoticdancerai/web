@@ -1,5 +1,6 @@
 import { Mail, MessageCircle, Send } from "lucide-react";
 import { FaDiscord, FaTelegram, FaTwitter } from "react-icons/fa";
+import { Link } from "wouter";
 
 export default function Footer() {
   return (
@@ -106,9 +107,9 @@ export default function Footer() {
               <a href="#" className="text-white/70 hover:text-white transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors">
-                Terms of Service
-              </a>
+              <Link href="/terms" className="text-white/70 hover:text-white transition-colors" data-testid="link-terms">
+                Terms & Conditions
+              </Link>
             </div>
           </div>
         </div>
