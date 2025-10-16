@@ -83,9 +83,25 @@ The application uses Drizzle ORM which provides flexibility for different databa
 - Translation files stored in `client/src/lib/translations.ts` with type-safe structure
 - Language preference persisted to localStorage (key: 'preferred-language')
 - SSR-safe implementation with window guards for browser-only APIs
-- Translations applied to: Header navigation, How to Participate section, Waitlist form
-- Components use `useLanguage()` hook and `t()` function for accessing translations
-- Mobile and desktop navigation both fully translated
+
+**Translation Coverage:**
+Currently translated sections (titles, subtitles, and primary UI elements):
+- Header navigation (Home, About, Tokenomics, Roadmap, Blog, Terms)
+- HeroSection (title, subtitle, CTA button)
+- CountdownTimer (title, subtitle, time units)
+- VideoSection (title, description, caption)
+- MissionSection (vision/mission titles and main text)
+- ChoosePath (section titles, descriptions, CTA buttons)
+- AboutSection (artist title, subtitle, featured label, bio)
+- Tokenomics (section title and subtitle)
+- RoadmapSection (section title and subtitle)
+- TransparencySection (section title and subtitle)
+- DisclaimerSection (section title and subtitle)
+- HowToParticipate (title, subtitle, step titles/descriptions)
+- Waitlist form (title, placeholders, button, messages)
+- Footer (copyright text, "Follow Us")
+
+**Note:** Detailed content such as bullet points, card descriptions, technical specifications, and longer paragraphs within sections remain in English as universal content. Future enhancement could extend translations to cover all granular text elements.
 
 ### Key Architectural Decisions
 
