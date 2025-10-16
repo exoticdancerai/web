@@ -4,11 +4,13 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Mail, Wallet, Award, Target, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function HowToParticipate() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const { toast } = useToast();
+  const { t } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,10 +58,10 @@ export default function HowToParticipate() {
             <Target className="h-12 w-12 text-patriot-red" />
           </div>
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            HOW TO <span className="bg-gradient-to-r from-patriot-red to-patriot-blue bg-clip-text text-transparent">PARTICIPATE</span>
+            {t('participate.title').toUpperCase()}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join the NAT250 launch in three simple steps
+            {t('participate.subtitle')}
           </p>
         </div>
 
@@ -73,9 +75,9 @@ export default function HowToParticipate() {
                 1
               </div>
             </div>
-            <h3 className="text-xl font-bold mb-3">Join Waitlist</h3>
+            <h3 className="text-xl font-bold mb-3">{t('participate.step1Title')}</h3>
             <p className="text-muted-foreground">
-              Sign up with your email to receive early access notifications and exclusive updates
+              {t('participate.step1Description')}
             </p>
           </div>
 
@@ -88,9 +90,9 @@ export default function HowToParticipate() {
                 2
               </div>
             </div>
-            <h3 className="text-xl font-bold mb-3">Connect Wallet</h3>
+            <h3 className="text-xl font-bold mb-3">{t('participate.step2Title')}</h3>
             <p className="text-muted-foreground">
-              Link your crypto wallet or use credit card payment for seamless purchase
+              {t('participate.step2Description')}
             </p>
           </div>
 
@@ -103,9 +105,9 @@ export default function HowToParticipate() {
                 3
               </div>
             </div>
-            <h3 className="text-xl font-bold mb-3">Own History</h3>
+            <h3 className="text-xl font-bold mb-3">{t('participate.step3Title')}</h3>
             <p className="text-muted-foreground">
-              Receive your NAT250 NFT and become part of America's digital heritage
+              {t('participate.step3Description')}
             </p>
           </div>
         </div>
@@ -114,11 +116,11 @@ export default function HowToParticipate() {
           <div className="bg-white rounded-2xl border-4 border-patriot-red p-8 shadow-2xl">
             <div className="text-center mb-6">
               <Star className="h-16 w-16 text-patriot-gold mx-auto mb-3" />
-              <h3 className="text-3xl font-black text-patriot-navy">JOIN THE WAITLIST</h3>
+              <h3 className="text-3xl font-black text-patriot-navy">{t('waitlist.title')}</h3>
             </div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <Label htmlFor="name">Full Name</Label>
+                <Label htmlFor="name">{t('waitlist.namePlaceholder')}</Label>
                 <Input
                   id="name"
                   type="text"
@@ -131,7 +133,7 @@ export default function HowToParticipate() {
                 />
               </div>
               <div>
-                <Label htmlFor="email">Email Address</Label>
+                <Label htmlFor="email">{t('waitlist.emailPlaceholder')}</Label>
                 <Input
                   id="email"
                   type="email"
@@ -148,11 +150,11 @@ export default function HowToParticipate() {
                 className="w-full h-14 bg-patriot-red hover:bg-patriot-red-hover text-white text-xl font-bold border-2 border-white shadow-xl"
                 data-testid="button-submit-waitlist"
               >
-JOIN WAITLIST NOW
+                {t('waitlist.button')}
               </Button>
             </form>
             <p className="text-sm text-muted-foreground text-center mt-6">
-              Be among the first to own a piece of American history. Limited editions available.
+              {t('waitlist.caption')}
             </p>
           </div>
         </div>
