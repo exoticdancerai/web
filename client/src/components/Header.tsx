@@ -2,10 +2,13 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [location, navigate] = useLocation();
+  const { t } = useLanguage();
 
   const scrollToSection = (id: string) => {
     if (location !== "/") {
@@ -36,51 +39,38 @@ export default function Header() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             <button
               onClick={() => scrollToSection("mission")}
               className="text-sm text-white/90 hover:text-white transition-colors"
               data-testid="link-mission"
             >
-              Mission
-            </button>
-            <button
-              onClick={() => scrollToSection("nft-showcase")}
-              className="text-sm text-white/90 hover:text-white transition-colors"
-              data-testid="link-nft"
-            >
-              NFT Collection
-            </button>
-            <button
-              onClick={() => scrollToSection("timeline")}
-              className="text-sm text-white/90 hover:text-white transition-colors"
-              data-testid="link-timeline"
-            >
-              Timeline
+              {t('header.about')}
             </button>
             <button
               onClick={() => scrollToSection("tokenomics")}
               className="text-sm text-white/90 hover:text-white transition-colors"
               data-testid="link-tokenomics"
             >
-              Tokenomics
+              {t('header.tokenomics')}
             </button>
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => scrollToSection("roadmap")}
               className="text-sm text-white/90 hover:text-white transition-colors"
-              data-testid="link-about"
+              data-testid="link-roadmap"
             >
-              About
+              {t('header.roadmap')}
             </button>
             <Link href="/blog" className="text-sm text-white/90 hover:text-white transition-colors" data-testid="link-blog">
-              Blog
+              {t('header.blog')}
             </Link>
+            <LanguageSelector />
             <Button
               onClick={() => scrollToSection("participate")}
               className="bg-patriot-red hover:bg-patriot-red-hover text-white h-12 px-6 font-bold border-2 border-white shadow-lg"
               data-testid="button-join-waitlist-header"
             >
-JOIN WAITLIST
+              {t('waitlist.button')}
             </Button>
           </nav>
 

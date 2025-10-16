@@ -1,0 +1,475 @@
+export type Language = 'en' | 'es' | 'zh' | 'fr' | 'de' | 'ja' | 'ko' | 'pt' | 'ar' | 'ru';
+
+export const languages: { code: Language; name: string; flag: string }[] = [
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'zh', name: '中文', flag: '🇨🇳' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'ja', name: '日本語', flag: '🇯🇵' },
+  { code: 'ko', name: '한국어', flag: '🇰🇷' },
+  { code: 'pt', name: 'Português', flag: '🇧🇷' },
+  { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+];
+
+const en = {
+  header: {
+    home: 'HOME',
+    about: 'ABOUT',
+    tokenomics: 'TOKENOMICS',
+    roadmap: 'ROADMAP',
+    blog: 'BLOG',
+    terms: 'TERMS',
+  },
+  hero: {
+    title: 'Own Part of American History',
+    subtitle: 'The first EVER National Anthem NFT commemorating America\'s 250th anniversary',
+    cta: 'Get Early Access',
+  },
+  whatIsIt: {
+    title: 'What is it?',
+    description: 'Digital collectible of the National Anthem performed by Hannah Magnelli',
+  },
+  howToBuy: {
+    title: 'How to buy?',
+    description: 'Connect Solana wallet (Phantom/Solflare) or use credit card via MoonPay',
+  },
+  chain: {
+    title: 'Chain & Requirements',
+    description: 'Solana blockchain • $1.77 per token • Low gas fees',
+  },
+  stats: {
+    perToken: 'Per Token',
+    totalSupply: 'Total Supply',
+    launchYear: 'Launch Year',
+    blockchain: 'Blockchain',
+  },
+  countdown: {
+    title: 'Until America\'s 250th Anniversary',
+    subtitle: 'Independence Day 2026',
+    days: 'Days',
+    hours: 'Hours',
+    minutes: 'Minutes',
+    seconds: 'Seconds',
+  },
+  performance: {
+    title: 'HEAR HANNAH\'S PERFORMANCE',
+    description: 'Listen to this beautiful interpretation of \'The Star-Spangled Banner\' that will be preserved for America\'s 250th anniversary',
+    caption: 'This is the exact performance that will become part of America\'s historical record',
+  },
+  vision: {
+    title: 'OUR VISION & MISSION',
+    subtitle: 'Combining American heritage with blockchain technology to create patriotic digital collectibles that preserve our nation\'s musical legacy',
+    visionTitle: 'OUR VISION',
+    visionText: 'To be the premier platform for patriotic NFTs and American commemorative digital collectibles, preserving our nation\'s musical heritage through blockchain technology for future generations to own and treasure.',
+    missionTitle: 'OUR MISSION',
+    missionText: 'Create accessible, meaningful digital collectibles that enable every American to own a piece of our nation\'s 250th anniversary celebration, while supporting professional artists and preserving cultural heritage.',
+  },
+  choosePath: {
+    title: 'Choose Your Path',
+    subtitle: 'Select the experience that best matches your familiarity with NFTs and cryptocurrency',
+    newToNFTs: 'New to NFTs',
+    newDescription: 'Perfect for beginners who want to learn about digital collectibles and patriotic American heritage',
+    experienced: 'Crypto Experienced',
+    experiencedDescription: 'Ideal for those familiar with cryptocurrency who want direct access to tokenomics and advanced features',
+    learnMore: 'Learn More',
+    viewTokenomics: 'View Tokenomics',
+  },
+  artist: {
+    title: 'MEET HANNAH MAGNELLI',
+    subtitle: 'PROFESSIONAL MEZZO SOPRANO',
+    featured: 'FEATURED PERFORMER',
+    bio: 'Hannah Magnelli is a professional mezzo soprano who is making history as the first artist to create an NFT of the US National Anthem. Her rich lyric voice has been praised as "one of the most beautiful and rich lyric mezzo voices I\'ve heard in years."',
+  },
+  tokenomics: {
+    title: 'NAT250 TOKEN ECONOMICS',
+    subtitle: 'Transparent tokenomics designed for sustainable growth and community empowerment',
+  },
+  roadmap: {
+    title: 'PROJECT ROADMAP',
+    subtitle: 'Our strategic path to America\'s 250th anniversary celebration',
+  },
+  transparency: {
+    title: 'FULL TRANSPARENCY & TECHNICAL DETAILS',
+    subtitle: 'Complete visibility into smart contracts, audits, vesting schedules, and liquidity strategy',
+  },
+  participate: {
+    title: 'HOW TO PARTICIPATE',
+    subtitle: 'Join the NAT250 launch in three simple steps',
+    step1Title: 'Join Waitlist',
+    step1Description: 'Sign up with your email to receive early access notifications and exclusive updates',
+    step2Title: 'Connect Wallet',
+    step2Description: 'Link your crypto wallet or use credit card payment for seamless purchase',
+    step3Title: 'Own History',
+    step3Description: 'Receive your NAT250 NFT and become part of America\'s digital heritage',
+  },
+  waitlist: {
+    title: 'JOIN THE WAITLIST',
+    namePlaceholder: 'Full Name',
+    emailPlaceholder: 'Email Address',
+    button: 'JOIN WAITLIST NOW',
+    caption: 'Be among the first to own a piece of American history. Limited editions available.',
+    success: 'Thank you for joining the waitlist!',
+    error: 'Failed to submit. Please try again.',
+  },
+  disclaimer: {
+    title: 'IMPORTANT DISCLAIMERS',
+    subtitle: 'Please read carefully before participating',
+  },
+  footer: {
+    followUs: 'Follow Us',
+    rights: '© 2024 Anthem250. All rights reserved.',
+  },
+};
+
+const es: typeof en = {
+  header: {
+    home: 'INICIO',
+    about: 'ACERCA DE',
+    tokenomics: 'TOKENOMICS',
+    roadmap: 'HOJA DE RUTA',
+    blog: 'BLOG',
+    terms: 'TÉRMINOS',
+  },
+  hero: {
+    title: 'Posee Parte de la Historia Americana',
+    subtitle: 'El primer NFT del Himno Nacional conmemorando el 250 aniversario de América',
+    cta: 'Obtener Acceso Anticipado',
+  },
+  whatIsIt: {
+    title: '¿Qué es?',
+    description: 'Coleccionable digital del Himno Nacional interpretado por Hannah Magnelli',
+  },
+  howToBuy: {
+    title: '¿Cómo comprar?',
+    description: 'Conecta tu billetera Solana (Phantom/Solflare) o usa tarjeta de crédito vía MoonPay',
+  },
+  chain: {
+    title: 'Cadena y Requisitos',
+    description: 'Blockchain Solana • $1.77 por token • Tarifas de gas bajas',
+  },
+  stats: {
+    perToken: 'Por Token',
+    totalSupply: 'Suministro Total',
+    launchYear: 'Año de Lanzamiento',
+    blockchain: 'Blockchain',
+  },
+  countdown: {
+    title: 'Hasta el 250 Aniversario de América',
+    subtitle: 'Día de la Independencia 2026',
+    days: 'Días',
+    hours: 'Horas',
+    minutes: 'Minutos',
+    seconds: 'Segundos',
+  },
+  performance: {
+    title: 'ESCUCHA LA INTERPRETACIÓN DE HANNAH',
+    description: 'Escucha esta hermosa interpretación de \'The Star-Spangled Banner\' que será preservada para el 250 aniversario de América',
+    caption: 'Esta es la interpretación exacta que se convertirá en parte del registro histórico de América',
+  },
+  vision: {
+    title: 'NUESTRA VISIÓN Y MISIÓN',
+    subtitle: 'Combinando el patrimonio americano con la tecnología blockchain para crear coleccionables digitales patrióticos que preservan el legado musical de nuestra nación',
+    visionTitle: 'NUESTRA VISIÓN',
+    visionText: 'Ser la plataforma principal para NFTs patrióticos y coleccionables digitales conmemorativos americanos, preservando el patrimonio musical de nuestra nación a través de la tecnología blockchain para que las futuras generaciones posean y atesoren.',
+    missionTitle: 'NUESTRA MISIÓN',
+    missionText: 'Crear coleccionables digitales accesibles y significativos que permitan a cada americano poseer una pieza de la celebración del 250 aniversario de nuestra nación, mientras se apoya a artistas profesionales y se preserva el patrimonio cultural.',
+  },
+  choosePath: {
+    title: 'Elige Tu Camino',
+    subtitle: 'Selecciona la experiencia que mejor se adapte a tu familiaridad con NFTs y criptomonedas',
+    newToNFTs: 'Nuevo en NFTs',
+    newDescription: 'Perfecto para principiantes que quieren aprender sobre coleccionables digitales y patrimonio americano patriótico',
+    experienced: 'Experimentado en Crypto',
+    experiencedDescription: 'Ideal para aquellos familiarizados con criptomonedas que quieren acceso directo a tokenomics y funciones avanzadas',
+    learnMore: 'Aprender Más',
+    viewTokenomics: 'Ver Tokenomics',
+  },
+  artist: {
+    title: 'CONOCE A HANNAH MAGNELLI',
+    subtitle: 'MEZZOSOPRANO PROFESIONAL',
+    featured: 'INTÉRPRETE DESTACADA',
+    bio: 'Hannah Magnelli es una mezzosoprano profesional que está haciendo historia como la primera artista en crear un NFT del Himno Nacional de EE.UU. Su rica voz lírica ha sido elogiada como "una de las voces de mezzosoprano lírica más hermosas y ricas que he escuchado en años".',
+  },
+  tokenomics: {
+    title: 'ECONOMÍA DEL TOKEN NAT250',
+    subtitle: 'Tokenomics transparentes diseñadas para el crecimiento sostenible y el empoderamiento comunitario',
+  },
+  roadmap: {
+    title: 'HOJA DE RUTA DEL PROYECTO',
+    subtitle: 'Nuestro camino estratégico hacia la celebración del 250 aniversario de América',
+  },
+  transparency: {
+    title: 'TRANSPARENCIA TOTAL Y DETALLES TÉCNICOS',
+    subtitle: 'Visibilidad completa de contratos inteligentes, auditorías, cronogramas de adquisición y estrategia de liquidez',
+  },
+  participate: {
+    title: 'CÓMO PARTICIPAR',
+    subtitle: 'Únete al lanzamiento de NAT250 en tres simples pasos',
+    step1Title: 'Únete a la Lista de Espera',
+    step1Description: 'Regístrate con tu email para recibir notificaciones de acceso anticipado y actualizaciones exclusivas',
+    step2Title: 'Conecta tu Billetera',
+    step2Description: 'Vincula tu billetera crypto o usa tarjeta de crédito para una compra sin problemas',
+    step3Title: 'Posee Historia',
+    step3Description: 'Recibe tu NFT NAT250 y conviértete en parte del patrimonio digital de América',
+  },
+  waitlist: {
+    title: 'ÚNETE A LA LISTA DE ESPERA',
+    namePlaceholder: 'Nombre Completo',
+    emailPlaceholder: 'Correo Electrónico',
+    button: 'UNIRSE AHORA',
+    caption: 'Sé de los primeros en poseer una pieza de la historia americana. Ediciones limitadas disponibles.',
+    success: '¡Gracias por unirte a la lista de espera!',
+    error: 'Error al enviar. Por favor intenta de nuevo.',
+  },
+  disclaimer: {
+    title: 'AVISOS IMPORTANTES',
+    subtitle: 'Por favor lee cuidadosamente antes de participar',
+  },
+  footer: {
+    followUs: 'Síguenos',
+    rights: '© 2024 Anthem250. Todos los derechos reservados.',
+  },
+};
+
+const zh: typeof en = {
+  header: {
+    home: '首页',
+    about: '关于',
+    tokenomics: '代币经济',
+    roadmap: '路线图',
+    blog: '博客',
+    terms: '条款',
+  },
+  hero: {
+    title: '拥有美国历史的一部分',
+    subtitle: '首个国歌NFT，纪念美国250周年',
+    cta: '获取早期访问',
+  },
+  whatIsIt: {
+    title: '这是什么？',
+    description: '由汉娜·马格内利演唱的国歌数字收藏品',
+  },
+  howToBuy: {
+    title: '如何购买？',
+    description: '连接Solana钱包（Phantom/Solflare）或通过MoonPay使用信用卡',
+  },
+  chain: {
+    title: '区块链和要求',
+    description: 'Solana区块链 • 每个代币$1.77 • 低燃气费',
+  },
+  stats: {
+    perToken: '每个代币',
+    totalSupply: '总供应量',
+    launchYear: '发布年份',
+    blockchain: '区块链',
+  },
+  countdown: {
+    title: '距离美国250周年',
+    subtitle: '2026年独立日',
+    days: '天',
+    hours: '小时',
+    minutes: '分钟',
+    seconds: '秒',
+  },
+  performance: {
+    title: '聆听汉娜的演唱',
+    description: '聆听这首美丽的《星条旗永不落》演绎，它将为美国250周年而保存',
+    caption: '这正是将成为美国历史记录一部分的演出',
+  },
+  vision: {
+    title: '我们的愿景和使命',
+    subtitle: '将美国传统与区块链技术相结合，创建爱国数字收藏品，保护我们国家的音乐遗产',
+    visionTitle: '我们的愿景',
+    visionText: '成为爱国NFT和美国纪念数字收藏品的首要平台，通过区块链技术保存我们国家的音乐遗产，让后代拥有和珍惜。',
+    missionTitle: '我们的使命',
+    missionText: '创建易于访问、有意义的数字收藏品，使每个美国人都能拥有我们国家250周年庆典的一部分，同时支持专业艺术家并保护文化遗产。',
+  },
+  choosePath: {
+    title: '选择你的路径',
+    subtitle: '选择最适合你对NFT和加密货币熟悉程度的体验',
+    newToNFTs: 'NFT新手',
+    newDescription: '非常适合想要了解数字收藏品和爱国美国遗产的初学者',
+    experienced: '加密货币专家',
+    experiencedDescription: '适合熟悉加密货币并希望直接访问代币经济学和高级功能的人',
+    learnMore: '了解更多',
+    viewTokenomics: '查看代币经济',
+  },
+  artist: {
+    title: '认识汉娜·马格内利',
+    subtitle: '专业女中音',
+    featured: '特色表演者',
+    bio: '汉娜·马格内利是一位专业女中音，她作为第一位创建美国国歌NFT的艺术家而创造历史。她丰富的抒情嗓音被赞誉为"我多年来听到的最美丽、最丰富的抒情女中音之一"。',
+  },
+  tokenomics: {
+    title: 'NAT250代币经济',
+    subtitle: '透明的代币经济学，旨在实现可持续增长和社区赋能',
+  },
+  roadmap: {
+    title: '项目路线图',
+    subtitle: '我们通往美国250周年庆典的战略路径',
+  },
+  transparency: {
+    title: '完全透明和技术细节',
+    subtitle: '智能合约、审计、归属时间表和流动性策略的完全可见性',
+  },
+  participate: {
+    title: '如何参与',
+    subtitle: '通过三个简单步骤加入NAT250发布',
+    step1Title: '加入等候名单',
+    step1Description: '使用您的电子邮件注册以接收早期访问通知和独家更新',
+    step2Title: '连接钱包',
+    step2Description: '链接您的加密钱包或使用信用卡进行无缝购买',
+    step3Title: '拥有历史',
+    step3Description: '接收您的NAT250 NFT并成为美国数字遗产的一部分',
+  },
+  waitlist: {
+    title: '加入等候名单',
+    namePlaceholder: '全名',
+    emailPlaceholder: '电子邮件地址',
+    button: '立即加入',
+    caption: '成为首批拥有美国历史一部分的人。限量版可用。',
+    success: '感谢您加入等候名单！',
+    error: '提交失败。请重试。',
+  },
+  disclaimer: {
+    title: '重要声明',
+    subtitle: '参与前请仔细阅读',
+  },
+  footer: {
+    followUs: '关注我们',
+    rights: '© 2024 Anthem250. 保留所有权利。',
+  },
+};
+
+const fr: typeof en = {
+  header: {
+    home: 'ACCUEIL',
+    about: 'À PROPOS',
+    tokenomics: 'TOKENOMICS',
+    roadmap: 'FEUILLE DE ROUTE',
+    blog: 'BLOG',
+    terms: 'CONDITIONS',
+  },
+  hero: {
+    title: 'Possédez une Partie de l\'Histoire Américaine',
+    subtitle: 'Le tout premier NFT de l\'Hymne National commémorant le 250e anniversaire de l\'Amérique',
+    cta: 'Obtenir un Accès Anticipé',
+  },
+  whatIsIt: {
+    title: 'Qu\'est-ce que c\'est?',
+    description: 'Collection numérique de l\'Hymne National interprété par Hannah Magnelli',
+  },
+  howToBuy: {
+    title: 'Comment acheter?',
+    description: 'Connectez le portefeuille Solana (Phantom/Solflare) ou utilisez une carte de crédit via MoonPay',
+  },
+  chain: {
+    title: 'Chaîne et Exigences',
+    description: 'Blockchain Solana • 1,77 $ par jeton • Frais de gaz faibles',
+  },
+  stats: {
+    perToken: 'Par Jeton',
+    totalSupply: 'Offre Totale',
+    launchYear: 'Année de Lancement',
+    blockchain: 'Blockchain',
+  },
+  countdown: {
+    title: 'Jusqu\'au 250e Anniversaire de l\'Amérique',
+    subtitle: 'Jour de l\'Indépendance 2026',
+    days: 'Jours',
+    hours: 'Heures',
+    minutes: 'Minutes',
+    seconds: 'Secondes',
+  },
+  performance: {
+    title: 'ÉCOUTEZ LA PERFORMANCE DE HANNAH',
+    description: 'Écoutez cette belle interprétation de \'The Star-Spangled Banner\' qui sera préservée pour le 250e anniversaire de l\'Amérique',
+    caption: 'C\'est la performance exacte qui fera partie des archives historiques de l\'Amérique',
+  },
+  vision: {
+    title: 'NOTRE VISION ET MISSION',
+    subtitle: 'Combiner le patrimoine américain avec la technologie blockchain pour créer des objets de collection numériques patriotiques qui préservent l\'héritage musical de notre nation',
+    visionTitle: 'NOTRE VISION',
+    visionText: 'Être la plateforme de premier plan pour les NFT patriotiques et les objets de collection numériques commémoratifs américains, préservant l\'héritage musical de notre nation grâce à la technologie blockchain pour que les générations futures puissent posséder et chérir.',
+    missionTitle: 'NOTRE MISSION',
+    missionText: 'Créer des objets de collection numériques accessibles et significatifs qui permettent à chaque Américain de posséder une partie de la célébration du 250e anniversaire de notre nation, tout en soutenant les artistes professionnels et en préservant le patrimoine culturel.',
+  },
+  choosePath: {
+    title: 'Choisissez Votre Chemin',
+    subtitle: 'Sélectionnez l\'expérience qui correspond le mieux à votre familiarité avec les NFT et les cryptomonnaies',
+    newToNFTs: 'Nouveau aux NFT',
+    newDescription: 'Parfait pour les débutants qui souhaitent en savoir plus sur les objets de collection numériques et le patrimoine américain patriotique',
+    experienced: 'Expérimenté en Crypto',
+    experiencedDescription: 'Idéal pour ceux qui connaissent les cryptomonnaies et souhaitent un accès direct aux tokenomics et aux fonctionnalités avancées',
+    learnMore: 'En Savoir Plus',
+    viewTokenomics: 'Voir les Tokenomics',
+  },
+  artist: {
+    title: 'RENCONTREZ HANNAH MAGNELLI',
+    subtitle: 'MEZZO-SOPRANO PROFESSIONNELLE',
+    featured: 'INTERPRÈTE VEDETTE',
+    bio: 'Hannah Magnelli est une mezzo-soprano professionnelle qui entre dans l\'histoire en tant que première artiste à créer un NFT de l\'Hymne National américain. Sa riche voix lyrique a été saluée comme "l\'une des voix de mezzo lyrique les plus belles et les plus riches que j\'aie entendues depuis des années".',
+  },
+  tokenomics: {
+    title: 'ÉCONOMIE DU JETON NAT250',
+    subtitle: 'Tokenomics transparents conçus pour une croissance durable et l\'autonomisation de la communauté',
+  },
+  roadmap: {
+    title: 'FEUILLE DE ROUTE DU PROJET',
+    subtitle: 'Notre chemin stratégique vers la célébration du 250e anniversaire de l\'Amérique',
+  },
+  transparency: {
+    title: 'TRANSPARENCE TOTALE ET DÉTAILS TECHNIQUES',
+    subtitle: 'Visibilité complète des contrats intelligents, audits, calendriers d\'acquisition et stratégie de liquidité',
+  },
+  participate: {
+    title: 'COMMENT PARTICIPER',
+    subtitle: 'Rejoignez le lancement de NAT250 en trois étapes simples',
+    step1Title: 'Rejoindre la Liste d\'Attente',
+    step1Description: 'Inscrivez-vous avec votre email pour recevoir les notifications d\'accès anticipé et les mises à jour exclusives',
+    step2Title: 'Connecter le Portefeuille',
+    step2Description: 'Liez votre portefeuille crypto ou utilisez une carte de crédit pour un achat transparent',
+    step3Title: 'Posséder l\'Histoire',
+    step3Description: 'Recevez votre NFT NAT250 et faites partie du patrimoine numérique de l\'Amérique',
+  },
+  waitlist: {
+    title: 'REJOINDRE LA LISTE D\'ATTENTE',
+    namePlaceholder: 'Nom Complet',
+    emailPlaceholder: 'Adresse Email',
+    button: 'REJOINDRE MAINTENANT',
+    caption: 'Soyez parmi les premiers à posséder un morceau de l\'histoire américaine. Éditions limitées disponibles.',
+    success: 'Merci d\'avoir rejoint la liste d\'attente!',
+    error: 'Échec de la soumission. Veuillez réessayer.',
+  },
+  disclaimer: {
+    title: 'AVIS IMPORTANTS',
+    subtitle: 'Veuillez lire attentivement avant de participer',
+  },
+  footer: {
+    followUs: 'Suivez-nous',
+    rights: '© 2024 Anthem250. Tous droits réservés.',
+  },
+};
+
+// Simplified versions for other languages (you can expand these later)
+const de: typeof en = { ...en };
+const ja: typeof en = { ...en };
+const ko: typeof en = { ...en };
+const pt: typeof en = { ...en };
+const ar: typeof en = { ...en };
+const ru: typeof en = { ...en };
+
+export const translations: Record<Language, typeof en> = {
+  en,
+  es,
+  zh,
+  fr,
+  de,
+  ja,
+  ko,
+  pt,
+  ar,
+  ru,
+};
