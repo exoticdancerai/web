@@ -92,45 +92,31 @@ export default function Header() {
               className="block w-full text-left text-white/90 hover:text-white py-2"
               data-testid="link-mission-mobile"
             >
-              Mission
-            </button>
-            <button
-              onClick={() => scrollToSection("nft-showcase")}
-              className="block w-full text-left text-white/90 hover:text-white py-2"
-              data-testid="link-nft-mobile"
-            >
-              NFT Collection
-            </button>
-            <button
-              onClick={() => scrollToSection("timeline")}
-              className="block w-full text-left text-white/90 hover:text-white py-2"
-              data-testid="link-timeline-mobile"
-            >
-              Timeline
+              {t('header.about')}
             </button>
             <button
               onClick={() => scrollToSection("tokenomics")}
               className="block w-full text-left text-white/90 hover:text-white py-2"
               data-testid="link-tokenomics-mobile"
             >
-              Tokenomics
+              {t('header.tokenomics')}
             </button>
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => scrollToSection("roadmap")}
               className="block w-full text-left text-white/90 hover:text-white py-2"
-              data-testid="link-about-mobile"
+              data-testid="link-roadmap-mobile"
             >
-              About
+              {t('header.roadmap')}
             </button>
             <Link href="/blog" className="block w-full text-left text-white/90 hover:text-white py-2" data-testid="link-blog-mobile">
-              Blog
+              {t('header.blog')}
             </Link>
             <Button
               onClick={() => scrollToSection("participate")}
               className="w-full bg-patriot-red hover:bg-patriot-red-hover text-white"
               data-testid="button-join-waitlist-mobile"
             >
-              Join Waitlist
+              {t('waitlist.button')}
             </Button>
           </div>
         </div>
