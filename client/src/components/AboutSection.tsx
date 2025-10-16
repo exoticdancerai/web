@@ -1,6 +1,8 @@
 import { Music2, Award, Globe, Mic2, Flag, Star, Building2, Bell, Landmark } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function AboutSection() {
+  const { t } = useLanguage();
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-patriot-red/10 via-white to-patriot-blue/10 relative">
       <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-r from-patriot-blue via-white to-patriot-red"></div>
@@ -8,19 +10,19 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-black mb-4">
-            MEET HANNAH MAGNELLI
+            {t('artist.title')}
           </h2>
-          <p className="text-2xl text-patriot-gold font-semibold">PROFESSIONAL MEZZO SOPRANO</p>
+          <p className="text-2xl text-patriot-gold font-semibold">{t('artist.subtitle')}</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <Music2 className="h-12 w-12 text-patriot-red" />
-              <h3 className="text-2xl font-bold">FEATURED PERFORMER</h3>
+              <h3 className="text-2xl font-bold">{t('artist.featured')}</h3>
             </div>
             <p className="text-lg mb-6">
-              Hannah Magnelli is a professional mezzo soprano who is making history as the first artist to create an NFT of the US National Anthem. Her rich lyric voice has been praised as "one of the most beautiful and rich lyric mezzo voices I've heard in years."
+              {t('artist.bio')}
             </p>
             <p className="text-lg mb-6">
               With her advanced classical training and professional performance experience, Hannah brings unparalleled artistry to America's most treasured song. Her powerful interpretation of 'The Star-Spangled Banner' combines classical precision with heartfelt patriotism.

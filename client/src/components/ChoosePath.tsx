@@ -1,8 +1,10 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function ChoosePath() {
+  const { t } = useLanguage();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -15,10 +17,10 @@ export default function ChoosePath() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            Choose Your Path
+            {t('choosePath.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Select the experience that best matches your familiarity with NFTs and cryptocurrency
+            {t('choosePath.subtitle')}
           </p>
         </div>
 
@@ -27,9 +29,9 @@ export default function ChoosePath() {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-patriot-blue/10 mb-6">
               <GraduationCap className="h-8 w-8 text-patriot-blue" />
             </div>
-            <h3 className="text-2xl font-bold mb-3">New to NFTs</h3>
+            <h3 className="text-2xl font-bold mb-3">{t('choosePath.newToNFTs')}</h3>
             <p className="text-muted-foreground mb-6">
-              Perfect for beginners who want to learn about digital collectibles and patriotic American heritage
+              {t('choosePath.newDescription')}
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-2">
@@ -55,7 +57,7 @@ export default function ChoosePath() {
               className="w-full"
               data-testid="button-learn-more-beginner"
             >
-              Learn More
+              {t('choosePath.learnMore')}
             </Button>
           </Card>
 
@@ -63,9 +65,9 @@ export default function ChoosePath() {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-patriot-gold/10 mb-6">
               <TrendingUp className="h-8 w-8 text-patriot-gold" />
             </div>
-            <h3 className="text-2xl font-bold mb-3">Crypto Experienced</h3>
+            <h3 className="text-2xl font-bold mb-3">{t('choosePath.experienced')}</h3>
             <p className="text-muted-foreground mb-6">
-              Ideal for those familiar with cryptocurrency who want direct access to tokenomics and advanced features
+              {t('choosePath.experiencedDescription')}
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-2">
@@ -90,7 +92,7 @@ export default function ChoosePath() {
               className="w-full bg-patriot-gold hover:bg-patriot-gold/90 text-patriot-navy"
               data-testid="button-view-tokenomics"
             >
-              View Tokenomics
+              {t('choosePath.viewTokenomics')}
             </Button>
           </Card>
         </div>

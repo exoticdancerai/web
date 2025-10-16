@@ -1,8 +1,10 @@
 import { Mail, MessageCircle, Send } from "lucide-react";
 import { FaDiscord, FaTelegram, FaTwitter } from "react-icons/fa";
 import { Link } from "wouter";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-gradient-to-b from-patriot-navy to-black text-white py-12 border-t-4 border-patriot-gold relative overflow-hidden">
       
@@ -112,7 +114,7 @@ export default function Footer() {
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/70 text-sm">
-              © 2024 Anthem250. All rights reserved.
+              {t('footer.rights')}
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-white/70 hover:text-white transition-colors">
