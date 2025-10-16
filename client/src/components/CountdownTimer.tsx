@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { Flag, Star } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function CountdownTimer() {
+  const { t } = useLanguage();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -39,13 +41,13 @@ export default function CountdownTimer() {
           <div className="flex items-center justify-center gap-3 mb-2">
             <Flag className="h-8 w-8 text-white" />
             <h2 className="text-3xl md:text-4xl font-black text-white">
-              Until America's 250th Anniversary
+              {t('countdown.title')}
             </h2>
             <Flag className="h-8 w-8 text-white" />
           </div>
           <div className="flex items-center justify-center gap-2 mb-8">
             <Star className="h-6 w-6 text-patriot-gold" />
-            <p className="text-xl text-patriot-gold">Independence Day 2026</p>
+            <p className="text-xl text-patriot-gold">{t('countdown.subtitle')}</p>
             <Star className="h-6 w-6 text-patriot-gold" />
           </div>
           
@@ -54,25 +56,25 @@ export default function CountdownTimer() {
               <div className="text-5xl font-black text-patriot-gold mb-2">
                 {String(timeLeft.days).padStart(3, '0')}
               </div>
-              <div className="text-white text-sm">Days</div>
+              <div className="text-white text-sm">{t('countdown.days')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border-2 border-patriot-gold">
               <div className="text-5xl font-black text-patriot-gold mb-2">
                 {String(timeLeft.hours).padStart(2, '0')}
               </div>
-              <div className="text-white text-sm">Hours</div>
+              <div className="text-white text-sm">{t('countdown.hours')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border-2 border-patriot-gold">
               <div className="text-5xl font-black text-patriot-gold mb-2">
                 {String(timeLeft.minutes).padStart(2, '0')}
               </div>
-              <div className="text-white text-sm">Minutes</div>
+              <div className="text-white text-sm">{t('countdown.minutes')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border-2 border-patriot-gold">
               <div className="text-5xl font-black text-patriot-gold mb-2">
                 {String(timeLeft.seconds).padStart(2, '0')}
               </div>
-              <div className="text-white text-sm">Seconds</div>
+              <div className="text-white text-sm">{t('countdown.seconds')}</div>
             </div>
           </div>
         </div>

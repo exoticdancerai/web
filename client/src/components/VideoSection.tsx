@@ -1,20 +1,22 @@
 import { Music } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function VideoSection() {
+  const { t } = useLanguage();
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            HEAR HANNAH'S PERFORMANCE
+            {t('performance.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
-            Listen to this beautiful interpretation of 'The Star-Spangled Banner' that will be preserved for America's 250th anniversary
+            {t('performance.description')}
           </p>
           <div className="flex items-center justify-center gap-2">
             <Music className="h-6 w-6 text-patriot-gold" />
             <p className="text-lg text-patriot-gold font-semibold">
-              This is the exact performance that will become part of America's historical record
+              {t('performance.caption')}
             </p>
           </div>
         </div>

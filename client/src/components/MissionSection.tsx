@@ -1,6 +1,8 @@
 import { Flag, Music, History, Eye, Target, Star, Users, Shield, Heart } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function MissionSection() {
+  const { t } = useLanguage();
   return (
     <section id="mission" className="py-20 bg-background relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-patriot-red via-white to-patriot-blue"></div>
@@ -8,10 +10,10 @@ export default function MissionSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            OUR VISION & MISSION
+            {t('vision.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Combining American heritage with blockchain technology to create patriotic digital collectibles that preserve our nation's musical legacy
+            {t('vision.subtitle')}
           </p>
         </div>
 
@@ -20,9 +22,9 @@ export default function MissionSection() {
             <div className="mb-4">
               <Eye className="h-16 w-16 text-patriot-blue" />
             </div>
-            <h3 className="text-3xl font-black mb-4">OUR VISION</h3>
+            <h3 className="text-3xl font-black mb-4">{t('vision.visionTitle')}</h3>
             <p className="text-lg mb-6">
-              To be the premier platform for patriotic NFTs and American commemorative digital collectibles, preserving our nation's musical heritage through blockchain technology for future generations to own and treasure.
+              {t('vision.visionText')}
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
@@ -53,9 +55,9 @@ export default function MissionSection() {
             <div className="mb-4">
               <Target className="h-16 w-16 text-patriot-red" />
             </div>
-            <h3 className="text-3xl font-black mb-4">OUR MISSION</h3>
+            <h3 className="text-3xl font-black mb-4">{t('vision.missionTitle')}</h3>
             <p className="text-lg mb-6">
-              Create accessible, meaningful digital collectibles that enable every American to own a piece of our nation's 250th anniversary celebration, while supporting professional artists and preserving cultural heritage.
+              {t('vision.missionText')}
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
