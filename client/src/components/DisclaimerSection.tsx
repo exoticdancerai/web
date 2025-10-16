@@ -1,16 +1,18 @@
 import { Card } from "@/components/ui/card";
 import { AlertTriangle, Info, Shield, AlertCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function DisclaimerSection() {
+  const { t } = useLanguage();
   return (
     <section className="py-20 bg-muted/30" id="disclaimer">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            IMPORTANT DISCLAIMERS
+            {t('disclaimer.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Please read carefully before participating
+            {t('disclaimer.subtitle')}
           </p>
         </div>
 

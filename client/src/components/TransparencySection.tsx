@@ -1,16 +1,18 @@
 import { Card } from "@/components/ui/card";
 import { Shield, FileCheck, Lock, TrendingUp, Clock, Users, Check } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function TransparencySection() {
+  const { t } = useLanguage();
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            FULL TRANSPARENCY & TECHNICAL DETAILS
+            {t('transparency.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Complete visibility into smart contracts, audits, vesting schedules, and liquidity strategy
+            {t('transparency.subtitle')}
           </p>
         </div>
 

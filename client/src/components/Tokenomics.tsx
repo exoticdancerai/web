@@ -1,7 +1,9 @@
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
 import { TrendingUp, Users, Coins, Target } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Tokenomics() {
+  const { t } = useLanguage();
   const allocationData = [
     { name: "Public Sale", value: 40, color: "hsl(var(--patriot-red))" },
     { name: "Community", value: 25, color: "hsl(var(--patriot-blue))" },
@@ -22,10 +24,10 @@ export default function Tokenomics() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-patriot-red">NAT250</span> TOKEN ECONOMICS
+            {t('tokenomics.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Transparent tokenomics designed for sustainable growth and community empowerment
+            {t('tokenomics.subtitle')}
           </p>
         </div>
 
