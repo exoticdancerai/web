@@ -19,6 +19,7 @@ Preferred communication style: Simple, everyday language.
 **State Management:**
 - TanStack Query (React Query) for server state management and API caching
 - Local component state using React hooks for UI interactions
+- React Context API for global language/translation state management
 
 **Styling Approach:**
 - Tailwind CSS with custom CSS variables for theming
@@ -73,6 +74,18 @@ The application uses Drizzle ORM which provides flexibility for different databa
 - Accessibility built-in via Radix UI primitives
 - Comprehensive legal disclaimer section with financial warnings and risk notices
 - Dedicated Terms & Conditions page with full legal documentation
+
+### Internationalization (i18n)
+**Multi-Language Support:**
+- Language selector dropdown in header (globe icon) for easy language switching
+- Support for 10 languages: English, Spanish, Chinese, French, German, Japanese, Korean, Portuguese, Arabic, Russian
+- Translation context using React Context API (`LanguageProvider`)
+- Translation files stored in `client/src/lib/translations.ts` with type-safe structure
+- Language preference persisted to localStorage (key: 'preferred-language')
+- SSR-safe implementation with window guards for browser-only APIs
+- Translations applied to: Header navigation, How to Participate section, Waitlist form
+- Components use `useLanguage()` hook and `t()` function for accessing translations
+- Mobile and desktop navigation both fully translated
 
 ### Key Architectural Decisions
 
@@ -155,3 +168,10 @@ The application uses Drizzle ORM which provides flexibility for different databa
 - Links to all 13 platforms: Twitter, Facebook, Instagram, YouTube, Telegram, Discord, WhatsApp, TikTok, LinkedIn, Reddit, Pinterest, Truth Social, Gettr
 - Remains visible when scrolling for easy access across all pages
 - Social media bar component with branded icons using react-icons (no emojis)
+
+### Email Service
+- **Resend API** integration for waitlist email notifications
+- Sends formatted emails to anthem250th@gmail.com when users join waitlist
+- API key stored in Replit Secrets (RESEND_API_KEY)
+- Free plan supports 100 emails/day
+- Email sender: onboarding@resend.dev (Resend's default for free accounts)
