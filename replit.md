@@ -85,13 +85,13 @@ The application uses Drizzle ORM which provides flexibility for different databa
 - SSR-safe implementation with window guards for browser-only APIs
 
 **Translation Coverage:**
-Currently translated sections (titles, subtitles, and primary UI elements):
+Fully translated sections with complete content:
 - Header navigation (Home, About, Tokenomics, Roadmap, Blog, Terms)
 - HeroSection (title, subtitle, CTA button)
 - CountdownTimer (title, subtitle, time units)
 - VideoSection (title, description, caption)
-- MissionSection (vision/mission titles and main text)
-- ChoosePath (section titles, descriptions, CTA buttons)
+- MissionSection (vision/mission titles, main text, AND all bullet point titles/descriptions)
+- ChoosePath (section titles, descriptions, CTA buttons, AND all 8 bullet points for both paths)
 - AboutSection (artist title, subtitle, featured label, bio)
 - Tokenomics (section title and subtitle)
 - RoadmapSection (section title and subtitle)
@@ -101,7 +101,14 @@ Currently translated sections (titles, subtitles, and primary UI elements):
 - Waitlist form (title, placeholders, button, messages)
 - Footer (copyright text, "Follow Us")
 
-**Note:** Detailed content such as bullet points, card descriptions, technical specifications, and longer paragraphs within sections remain in English as universal content. Future enhancement could extend translations to cover all granular text elements.
+**Recent Enhancement (October 23, 2025):**
+Extended translations to include all bullet point content for ChoosePath and MissionSection:
+- ChoosePath: 8 new keys (newBullet1-4, expBullet1-4) for beginner and experienced paths
+- MissionSection: 14 new keys (visionBullet1-3Title/Text, missionBullet1-4Title/Text) for vision/mission details
+- Full translations: English, Spanish, Chinese, French
+- Fallback to English: German, Japanese, Korean, Portuguese, Arabic, Russian (via spread operator)
+
+**Note:** Remaining detailed content in AboutSection, RoadmapSection, TransparencySection, and DisclaimerSection (longer paragraphs, technical specifications, legal text) remain in English. Future enhancement could extend translations to these sections.
 
 ### Key Architectural Decisions
 
