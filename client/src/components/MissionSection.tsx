@@ -30,22 +30,22 @@ export default function MissionSection() {
               <div className="flex items-start gap-3">
                 <Star className="h-6 w-6 text-patriot-gold mt-1" />
                 <div>
-                  <p className="font-bold">Preserve History:</p>
-                  <p className="text-muted-foreground">Digitally preserve America's musical treasures for posterity</p>
+                  <p className="font-bold">{t('vision.visionBullet1Title')}:</p>
+                  <p className="text-muted-foreground">{t('vision.visionBullet1Text')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Flag className="h-6 w-6 text-patriot-red mt-1" />
                 <div>
-                  <p className="font-bold">Celebrate Heritage:</p>
-                  <p className="text-muted-foreground">Honor the cultural significance of our National Anthem</p>
+                  <p className="font-bold">{t('vision.visionBullet2Title')}:</p>
+                  <p className="text-muted-foreground">{t('vision.visionBullet2Text')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Music className="h-6 w-6 text-patriot-blue mt-1" />
                 <div>
-                  <p className="font-bold">Innovate Tradition:</p>
-                  <p className="text-muted-foreground">Blend timeless American values with cutting-edge blockchain technology</p>
+                  <p className="font-bold">{t('vision.visionBullet3Title')}:</p>
+                  <p className="text-muted-foreground">{t('vision.visionBullet3Text')}</p>
                 </div>
               </div>
             </div>
@@ -63,29 +63,29 @@ export default function MissionSection() {
               <div className="flex items-start gap-3">
                 <Star className="h-6 w-6 text-patriot-gold mt-1" />
                 <div>
-                  <p className="font-bold">Democratize Ownership:</p>
-                  <p className="text-muted-foreground">Make historical memorabilia accessible to all Americans</p>
+                  <p className="font-bold">{t('vision.missionBullet1Title')}:</p>
+                  <p className="text-muted-foreground">{t('vision.missionBullet1Text')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Music className="h-6 w-6 text-patriot-blue mt-1" />
                 <div>
-                  <p className="font-bold">Support Artists:</p>
-                  <p className="text-muted-foreground">Empower professional musicians with innovative revenue streams</p>
+                  <p className="font-bold">{t('vision.missionBullet2Title')}:</p>
+                  <p className="text-muted-foreground">{t('vision.missionBullet2Text')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Users className="h-6 w-6 text-patriot-red mt-1" />
                 <div>
-                  <p className="font-bold">Build Community:</p>
-                  <p className="text-muted-foreground">Unite patriotic Americans in celebrating our shared heritage</p>
+                  <p className="font-bold">{t('vision.missionBullet3Title')}:</p>
+                  <p className="text-muted-foreground">{t('vision.missionBullet3Text')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Shield className="h-6 w-6 text-patriot-navy mt-1" />
                 <div>
-                  <p className="font-bold">Ensure Security:</p>
-                  <p className="text-muted-foreground">Provide transparent, secure blockchain-based authenticity</p>
+                  <p className="font-bold">{t('vision.missionBullet4Title')}:</p>
+                  <p className="text-muted-foreground">{t('vision.missionBullet4Text')}</p>
                 </div>
               </div>
             </div>

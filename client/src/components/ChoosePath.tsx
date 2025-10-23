@@ -36,19 +36,19 @@ export default function ChoosePath() {
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-2">
                 <span className="text-patriot-blue mt-1">•</span>
-                <span className="text-sm">Step-by-step wallet setup guidance</span>
+                <span className="text-sm">{t('choosePath.newBullet1')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-patriot-blue mt-1">•</span>
-                <span className="text-sm">Educational content about NFTs and blockchain</span>
+                <span className="text-sm">{t('choosePath.newBullet2')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-patriot-blue mt-1">•</span>
-                <span className="text-sm">Simple purchasing process with credit card option</span>
+                <span className="text-sm">{t('choosePath.newBullet3')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-patriot-blue mt-1">•</span>
-                <span className="text-sm">Community support and learning resources</span>
+                <span className="text-sm">{t('choosePath.newBullet4')}</span>
               </li>
             </ul>
             <Button
@@ -72,19 +72,19 @@ export default function ChoosePath() {
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-2">
                 <span className="text-patriot-gold mt-1">•</span>
-                <span className="text-sm">Detailed tokenomics and smart contract information</span>
+                <span className="text-sm">{t('choosePath.expBullet1')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-patriot-gold mt-1">•</span>
-                <span className="text-sm">Advanced trading features and DeFi integration</span>
+                <span className="text-sm">{t('choosePath.expBullet2')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-patriot-gold mt-1">•</span>
-                <span className="text-sm">Priority access to exclusive drops and events</span>
+                <span className="text-sm">{t('choosePath.expBullet3')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-patriot-gold mt-1">•</span>
-                <span className="text-sm">Governance participation and voting rights</span>
+                <span className="text-sm">{t('choosePath.expBullet4')}</span>
               </li>
             </ul>
             <Button
